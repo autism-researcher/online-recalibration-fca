@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the paper and this archived repository."
+title: "Online Recalibration of Forward-Collision-Avoidance Supervisors with a Transient-Safety Guarantee (code and artifacts)"
+authors:
+  - family-names: "Hossain"
+    given-names: "Mohammad Belayet"
+  - family-names: "Kamal"
+    given-names: "Md Abdus Samad"
+version: "1.0.0"
+date-released: "2026-06-15"
+license: MIT
+repository-code: "https://github.com/REPLACE_WITH_YOUR_USERNAME/online-recalibration-fca"
+preferred-citation:
+  type: article
+  title: "Online Recalibration of Forward-Collision-Avoidance Supervisors with a Transient-Safety Guarantee"
+  authors:
+    - family-names: "Hossain"
+      given-names: "Mohammad Belayet"
+    - family-names: "Kamal"
+      given-names: "Md Abdus Samad"
+  journal: "IEEE Transactions on Intelligent Transportation Systems"
+  year: 2026
+  notes: "Under review."
