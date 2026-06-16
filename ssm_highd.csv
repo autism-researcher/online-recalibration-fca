@@ -1,0 +1,13 @@
+SSM,method,n_danger,missed_danger,missed_lo,missed_hi,false_alarm,fa_lo,fa_hi
+DRAC>3.4,fixed,0,nan,nan,nan,0.1308,0.1139,0.1483
+DRAC>3.4,online,0,nan,nan,nan,0.1,0.1,0.1
+DRAC>3.4,clamp,0,nan,nan,nan,0.1416,0.1394,0.1438
+DRAC>7.5,fixed,0,nan,nan,nan,0.1308,0.1139,0.1483
+DRAC>7.5,online,0,nan,nan,nan,0.1,0.1,0.1
+DRAC>7.5,clamp,0,nan,nan,nan,0.1416,0.1394,0.1438
+TTC<1.5s,fixed,18,0.0,0.0,0.0,0.1308,0.1139,0.1483
+TTC<1.5s,online,18,0.8889,0.8571,0.9091,0.1,0.1,0.1
+TTC<1.5s,clamp,18,0.0,0.0,0.0,0.1416,0.1393,0.1438
+TTC<1s,fixed,1,0.0,0.0,0.0,0.1308,0.1139,0.1483
+TTC<1s,online,1,1.0,1.0,1.0,0.1,0.1,0.1
+TTC<1s,clamp,1,0.0,0.0,0.0,0.1416,0.1394,0.1438

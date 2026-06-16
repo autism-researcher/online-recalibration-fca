@@ -1,0 +1,23 @@
+{
+  "highd": {
+    "pooled_density_at_q": 3.087153644548606,
+    "pooled_boundary": 0.27713797435712323,
+    "n_segments": 117,
+    "min_segment_density": 1.83,
+    "median_segment_density": 3.0988888888888892
+  },
+  "ngsim": {
+    "pooled_density_at_q": 1.5461094350057043,
+    "pooled_boundary": 0.41020540875732914,
+    "n_segments": 400,
+    "min_segment_density": 0.86,
+    "median_segment_density": 1.44
+  },
+  "waymo": {
+    "pooled_density_at_q": 2.2774715178243294,
+    "pooled_boundary": 0.22768206953991865,
+    "n_segments": 30,
+    "min_segment_density": 1.2111111111111112,
+    "median_segment_density": 2.1966666666666668
+  }
+}

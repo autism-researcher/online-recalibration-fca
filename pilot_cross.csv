@@ -1,0 +1,9 @@
+scenario,arm,seed,collision,min_ttc,max_drac,pet
+crossing,fixed,0,0,8.0,0.063,
+crossing,online,0,1,0.0,216.388,
+crossing,clamp,0,0,0.931,0.859,
+crossing,aeb,0,1,0.0,8.736,
+crossing,fixed,1,0,8.0,0.0,
+crossing,online,1,0,0.0,104.356,0.6
+crossing,clamp,1,0,3.169,0.49,
+crossing,aeb,1,0,0.891,0.811,

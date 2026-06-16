@@ -1,0 +1,9 @@
+scenario,arm,seed,collision,min_ttc,max_drac,pet
+cut_in,fixed,0,0,8.0,0.008,
+cut_in,online,0,1,0.0,159.261,
+cut_in,clamp,0,0,3.452,0.559,
+cut_in,aeb,0,0,0.322,1.03,
+cut_in,fixed,1,0,8.0,0.016,
+cut_in,online,1,0,0.0,115.975,
+cut_in,clamp,1,0,1.666,0.435,
+cut_in,aeb,1,0,0.0,0.855,

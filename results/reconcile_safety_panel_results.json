@@ -1,0 +1,167 @@
+{
+  "params": {
+    "tau": 0.1,
+    "gamma": 0.05,
+    "Ns": 2500,
+    "margin": 0.02,
+    "warmup": 1500
+  },
+  "per_corpus": {
+    "highd": {
+      "1.5": {
+        "fixed": {
+          "events": 18,
+          "missed_danger": 0.0,
+          "false_alarm": 0.45290250544041744,
+          "realized_rate": 0.4529081154245362
+        },
+        "online": {
+          "events": 18,
+          "missed_danger": 0.8888888888888888,
+          "false_alarm": 0.09999943032277911,
+          "realized_rate": 0.0999995442628965
+        },
+        "clamp": {
+          "events": 18,
+          "missed_danger": 0.0,
+          "false_alarm": 0.14009331312878123,
+          "realized_rate": 0.1401021306848931
+        }
+      },
+      "1.0": {
+        "fixed": {
+          "events": 1,
+          "missed_danger": 0.0,
+          "false_alarm": 0.45290780376177014,
+          "realized_rate": 0.4529081154245362
+        },
+        "online": {
+          "events": 1,
+          "missed_danger": 1.0,
+          "false_alarm": 0.09999960122980728,
+          "realized_rate": 0.0999995442628965
+        },
+        "clamp": {
+          "events": 1,
+          "missed_danger": 0.0,
+          "false_alarm": 0.1401016408254087,
+          "realized_rate": 0.1401021306848931
+        }
+      }
+    },
+    "ngsim": {
+      "1.5": {
+        "fixed": {
+          "events": 27667,
+          "missed_danger": 0.0006505945711497452,
+          "false_alarm": 0.29050523187108085,
+          "realized_rate": 0.29377003190121626
+        },
+        "online": {
+          "events": 27667,
+          "missed_danger": 0.3412007084251997,
+          "false_alarm": 0.09741418497172083,
+          "realized_rate": 0.0999998168797271
+        },
+        "clamp": {
+          "events": 27667,
+          "missed_danger": 0.011855278852062024,
+          "false_alarm": 0.13491815281819955,
+          "realized_rate": 0.13884795040969833
+        }
+      },
+      "1.0": {
+        "fixed": {
+          "events": 15837,
+          "missed_danger": 0.0005051461766748753,
+          "false_alarm": 0.29190451773484327,
+          "realized_rate": 0.29377003190121626
+        },
+        "online": {
+          "events": 15837,
+          "missed_danger": 0.24651133421733915,
+          "false_alarm": 0.09827238337118921,
+          "realized_rate": 0.0999998168797271
+        },
+        "clamp": {
+          "events": 15837,
+          "missed_danger": 0.008713771547641599,
+          "false_alarm": 0.13659461364974704,
+          "realized_rate": 0.13884795040969833
+        }
+      }
+    },
+    "waymo": {
+      "1.5": {
+        "fixed": {
+          "events": 214,
+          "missed_danger": 0.0,
+          "false_alarm": 0.19608591485287435,
+          "realized_rate": 0.19646527012127893
+        },
+        "online": {
+          "events": 214,
+          "missed_danger": 0.43457943925233644,
+          "false_alarm": 0.0997758589499786,
+          "realized_rate": 0.09999558985667034
+        },
+        "clamp": {
+          "events": 214,
+          "missed_danger": 0.0,
+          "false_alarm": 0.12481523806162113,
+          "realized_rate": 0.1252282249173098
+        }
+      },
+      "1.0": {
+        "fixed": {
+          "events": 20,
+          "missed_danger": 0.0,
+          "false_alarm": 0.19642983152509483,
+          "realized_rate": 0.19646527012127893
+        },
+        "online": {
+          "events": 20,
+          "missed_danger": 0.35,
+          "false_alarm": 0.09997133280409279,
+          "realized_rate": 0.09999558985667034
+        },
+        "clamp": {
+          "events": 20,
+          "missed_danger": 0.0,
+          "false_alarm": 0.12518964452677075,
+          "realized_rate": 0.1252282249173098
+        }
+      }
+    }
+  },
+  "pooled": {
+    "1.5": {
+      "fixed": {
+        "events": 27899,
+        "missed_danger": 0.0006451844152120148
+      },
+      "online": {
+        "events": 27899,
+        "missed_danger": 0.34227033226997383
+      },
+      "clamp": {
+        "events": 27899,
+        "missed_danger": 0.011756693788307824
+      }
+    },
+    "1.0": {
+      "fixed": {
+        "events": 15858,
+        "missed_danger": 0.0005044772354647496
+      },
+      "online": {
+        "events": 15858,
+        "missed_danger": 0.24668936814226258
+      },
+      "clamp": {
+        "events": 15858,
+        "missed_danger": 0.00870223231176693
+      }
+    }
+  }
+}

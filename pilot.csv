@@ -1,0 +1,9 @@
+scenario,arm,seed,collision,min_ttc,max_drac,pet
+lead_brake,fixed,0,0,8.0,0.0,
+lead_brake,online,0,1,0.0,89.162,
+lead_brake,clamp,0,0,3.234,0.584,
+lead_brake,aeb,0,0,0.0,1.773,
+lead_brake,fixed,1,0,8.0,0.0,
+lead_brake,online,1,1,0.0,165.595,
+lead_brake,clamp,1,0,2.486,0.793,
+lead_brake,aeb,1,0,0.0,0.788,
