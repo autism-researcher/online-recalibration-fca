@@ -1,0 +1,50 @@
+{
+  "raw_no_filter": {
+    "cutoff_hz": null,
+    "n_segments": 486,
+    "online": {
+      "rate_dev": 0.0033,
+      "worst_up": 0.315
+    },
+    "clamp": {
+      "rate_dev": 0.0325,
+      "worst_up": 0.111
+    }
+  },
+  "butter_1Hz": {
+    "cutoff_hz": 1.0,
+    "n_segments": 467,
+    "online": {
+      "rate_dev": 0.0034,
+      "worst_up": 0.411
+    },
+    "clamp": {
+      "rate_dev": 0.04,
+      "worst_up": 0.113
+    }
+  },
+  "butter_2Hz_current": {
+    "cutoff_hz": 2.0,
+    "n_segments": 463,
+    "online": {
+      "rate_dev": 0.0036,
+      "worst_up": 0.394
+    },
+    "clamp": {
+      "rate_dev": 0.0352,
+      "worst_up": 0.111
+    }
+  },
+  "butter_4Hz": {
+    "cutoff_hz": 4.0,
+    "n_segments": 459,
+    "online": {
+      "rate_dev": 0.0035,
+      "worst_up": 0.393
+    },
+    "clamp": {
+      "rate_dev": 0.0361,
+      "worst_up": 0.112
+    }
+  }
+}

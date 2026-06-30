@@ -1,0 +1,163 @@
+{
+  "segment_counts": {
+    "highd": 117,
+    "ngsim": 400,
+    "waymo": 30
+  },
+  "total_segments": 547,
+  "per_method": {
+    "fixed": {
+      "rate_dev": 0.1458,
+      "worst_up": 0.111,
+      "mean_up": 0.0306
+    },
+    "batch": {
+      "rate_dev": 0.1307,
+      "worst_up": 0.17,
+      "mean_up": 0.0288
+    },
+    "cusum": {
+      "rate_dev": 0.0626,
+      "worst_up": 0.198,
+      "mean_up": 0.0478
+    },
+    "online": {
+      "rate_dev": 0.0032,
+      "worst_up": 0.363,
+      "mean_up": 0.0171
+    },
+    "clamp": {
+      "rate_dev": 0.0414,
+      "worst_up": 0.12,
+      "mean_up": 0.0094
+    },
+    "U_t_alone": {
+      "rate_dev": 0.079,
+      "worst_up": 0.143,
+      "mean_up": 0.0281
+    },
+    "DtACI": {
+      "rate_dev": 0.062,
+      "worst_up": 0.482,
+      "mean_up": 0.0199
+    },
+    "SAOCP": {
+      "rate_dev": 0.017,
+      "worst_up": 0.49,
+      "mean_up": 0.0174
+    }
+  },
+  "block_bootstrap": {
+    "highd": {
+      "iid_CI": [
+        0.0018,
+        0.0019
+      ],
+      "block_CI": [
+        0.0018,
+        0.0019
+      ],
+      "block": 11
+    },
+    "ngsim": {
+      "iid_CI": [
+        0.0037,
+        0.0037
+      ],
+      "block_CI": [
+        0.0037,
+        0.0037
+      ],
+      "block": 20
+    },
+    "waymo": {
+      "iid_CI": [
+        0.0027,
+        0.0028
+      ],
+      "block_CI": [
+        0.0027,
+        0.0028
+      ],
+      "block": 5
+    }
+  },
+  "bound": {
+    "highd": {
+      "rho_F": 0.551,
+      "rho": 0.301,
+      "finite_term": 0.015,
+      "bound_m0": 0.316
+    },
+    "ngsim": {
+      "rho_F": 0.47,
+      "rho": 0.546,
+      "finite_term": 0.032,
+      "bound_m0": 0.578
+    },
+    "waymo": {
+      "rho_F": 0.308,
+      "rho": 0.254,
+      "finite_term": 0.022,
+      "bound_m0": 0.277
+    }
+  },
+  "ngsim_excluded": {
+    "TTC<1.5s": {
+      "online": {
+        "all": 0.344,
+        "excl_ngsim": 0.476,
+        "n_all": 24803,
+        "n_excl": 212
+      },
+      "clamp": {
+        "all": 0.011,
+        "excl_ngsim": 0.0,
+        "n_all": 24803,
+        "n_excl": 212
+      }
+    },
+    "TTC<1s": {
+      "online": {
+        "all": 0.249,
+        "excl_ngsim": 0.263,
+        "n_all": 14076,
+        "n_excl": 19
+      },
+      "clamp": {
+        "all": 0.008,
+        "excl_ngsim": 0.0,
+        "n_all": 14076,
+        "n_excl": 19
+      }
+    },
+    "DRAC>3.4": {
+      "online": {
+        "all": 0.289,
+        "excl_ngsim": 0.614,
+        "n_all": 24745,
+        "n_excl": 1533
+      },
+      "clamp": {
+        "all": 0.027,
+        "excl_ngsim": 0.061,
+        "n_all": 24745,
+        "n_excl": 1533
+      }
+    },
+    "DRAC>7.5": {
+      "online": {
+        "all": 0.171,
+        "excl_ngsim": 0.519,
+        "n_all": 12935,
+        "n_excl": 206
+      },
+      "clamp": {
+        "all": 0.019,
+        "excl_ngsim": 0.0,
+        "n_all": 12935,
+        "n_excl": 206
+      }
+    }
+  }
+}

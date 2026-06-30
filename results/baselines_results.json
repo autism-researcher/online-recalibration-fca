@@ -1,0 +1,111 @@
+{
+  "methods": {
+    "highd": {
+      "online_ACI": {
+        "rate_dev": 0.001,
+        "worst_underprot_p99": 0.084
+      },
+      "DtACI": {
+        "rate_dev": 0.003,
+        "worst_underprot_p99": 0.107
+      },
+      "SAOCP_style": {
+        "rate_dev": 0.0048,
+        "worst_underprot_p99": 0.119
+      },
+      "U_t_alone": {
+        "rate_dev": 0.0112,
+        "worst_underprot_p99": 0.007
+      },
+      "clamp_m.02": {
+        "rate_dev": 0.0015,
+        "worst_underprot_p99": 0.027
+      }
+    },
+    "ngsim": {
+      "online_ACI": {
+        "rate_dev": 0.0011,
+        "worst_underprot_p99": 0.073
+      },
+      "DtACI": {
+        "rate_dev": 0.0052,
+        "worst_underprot_p99": 0.077
+      },
+      "SAOCP_style": {
+        "rate_dev": 0.0036,
+        "worst_underprot_p99": 0.063
+      },
+      "U_t_alone": {
+        "rate_dev": 0.0088,
+        "worst_underprot_p99": 0.009
+      },
+      "clamp_m.02": {
+        "rate_dev": 0.0015,
+        "worst_underprot_p99": 0.029
+      }
+    },
+    "waymo": {
+      "online_ACI": {
+        "rate_dev": 0.0015,
+        "worst_underprot_p99": 0.115
+      },
+      "DtACI": {
+        "rate_dev": 0.0049,
+        "worst_underprot_p99": 0.138
+      },
+      "SAOCP_style": {
+        "rate_dev": 0.0081,
+        "worst_underprot_p99": 0.175
+      },
+      "U_t_alone": {
+        "rate_dev": 0.0074,
+        "worst_underprot_p99": 0.012
+      },
+      "clamp_m.02": {
+        "rate_dev": 0.0029,
+        "worst_underprot_p99": 0.03
+      }
+    }
+  },
+  "block_bootstrap": {
+    "highd": {
+      "iid_CI": [
+        0.001,
+        0.001
+      ],
+      "iid_width": 0.0,
+      "block300_CI": [
+        0.0009,
+        0.0011
+      ],
+      "block300_width": 0.0002,
+      "width_ratio": 200000.0
+    },
+    "ngsim": {
+      "iid_CI": [
+        0.001,
+        0.0011
+      ],
+      "iid_width": 0.0001,
+      "block300_CI": [
+        0.0009,
+        0.0012
+      ],
+      "block300_width": 0.0003,
+      "width_ratio": 3.0
+    },
+    "waymo": {
+      "iid_CI": [
+        0.0014,
+        0.0015
+      ],
+      "iid_width": 0.0001,
+      "block300_CI": [
+        0.0013,
+        0.0016
+      ],
+      "block300_width": 0.0003,
+      "width_ratio": 3.0
+    }
+  }
+}
