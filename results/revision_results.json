@@ -1,0 +1,138 @@
+{
+ "study1": {
+  "pooled": {
+   "fixed": {
+    "rate_dev": 0.1458,
+    "peak_up": 0.1112,
+    "mean_up": 0.0306
+   },
+   "batch": {
+    "rate_dev": 0.1306,
+    "peak_up": 0.1691,
+    "mean_up": 0.0288
+   },
+   "online": {
+    "rate_dev": 0.0032,
+    "peak_up": 0.3634,
+    "mean_up": 0.0171
+   },
+   "clamp": {
+    "rate_dev": 0.0418,
+    "peak_up": 0.1203,
+    "mean_up": 0.0094
+   }
+  },
+  "panel": {
+   "fixed": {
+    "realized": 0.182,
+    "missed": 0.006,
+    "false_alarm": 0.166
+   },
+   "batch": {
+    "realized": 0.173,
+    "missed": 0.007,
+    "false_alarm": 0.157
+   },
+   "online": {
+    "realized": 0.1,
+    "missed": 0.478,
+    "false_alarm": 0.095
+   },
+   "clamp": {
+    "realized": 0.139,
+    "missed": 0.002,
+    "false_alarm": 0.122
+   }
+  },
+  "per_corpus_clamp": {
+   "highd": {
+    "rate_dev": 0.0424,
+    "peak_up": 0.0755,
+    "mean_up": 0.0052
+   },
+   "ngsim": {
+    "rate_dev": 0.0425,
+    "peak_up": 0.1357,
+    "mean_up": 0.0106
+   },
+   "waymo": {
+    "rate_dev": 0.031,
+    "peak_up": 0.0896,
+    "mean_up": 0.0099
+   }
+  },
+  "per_corpus_online": {
+   "highd": {
+    "rate_dev": 0.0019,
+    "peak_up": 0.1583,
+    "mean_up": 0.0069
+   },
+   "ngsim": {
+    "rate_dev": 0.0037,
+    "peak_up": 0.4282,
+    "mean_up": 0.0203
+   },
+   "waymo": {
+    "rate_dev": 0.0028,
+    "peak_up": 0.2996,
+    "mean_up": 0.0145
+   }
+  }
+ },
+ "study2": {
+  "tau=0.1": {
+   "realized": 0.1,
+   "missed": 0.478
+  },
+  "tau=0.11": {
+   "realized": 0.11,
+   "missed": 0.47
+  },
+  "tau=0.12": {
+   "realized": 0.12,
+   "missed": 0.462
+  },
+  "tau=0.13": {
+   "realized": 0.13,
+   "missed": 0.455
+  },
+  "tau=0.138": {
+   "realized": 0.138,
+   "missed": 0.448
+  },
+  "tau=0.15": {
+   "realized": 0.15,
+   "missed": 0.439
+  },
+  "tau=0.16": {
+   "realized": 0.16,
+   "missed": 0.433
+  }
+ },
+ "study3": {
+  "reset": {
+   "online": {
+    "rate_dev": 0.0722,
+    "peak_up": 0.3346,
+    "mean_up": 0.0206
+   },
+   "clamp": {
+    "rate_dev": 0.0859,
+    "peak_up": 0.1532,
+    "mean_up": 0.0156
+   }
+  },
+  "excl": {
+   "online": {
+    "rate_dev": NaN,
+    "peak_up": NaN,
+    "mean_up": NaN
+   },
+   "clamp": {
+    "rate_dev": NaN,
+    "peak_up": NaN,
+    "mean_up": NaN
+   }
+  }
+ }
+}

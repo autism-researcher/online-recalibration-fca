@@ -1,0 +1,87 @@
+{
+ "fixed": {
+  "top5pct": {
+   "realized_rate": 0.182,
+   "missed_danger": 0.0739,
+   "false_alarm": 0.143
+  },
+  "top2pct": {
+   "realized_rate": 0.182,
+   "missed_danger": 0.0087,
+   "false_alarm": 0.166
+  },
+  "top1pct": {
+   "realized_rate": 0.182,
+   "missed_danger": 0.0017,
+   "false_alarm": 0.174
+  }
+ },
+ "batch": {
+  "top5pct": {
+   "realized_rate": 0.173,
+   "missed_danger": 0.1018,
+   "false_alarm": 0.135
+  },
+  "top2pct": {
+   "realized_rate": 0.173,
+   "missed_danger": 0.0121,
+   "false_alarm": 0.157
+  },
+  "top1pct": {
+   "realized_rate": 0.173,
+   "missed_danger": 0.0014,
+   "false_alarm": 0.165
+  }
+ },
+ "online": {
+  "top5pct": {
+   "realized_rate": 0.1,
+   "missed_danger": 0.7273,
+   "false_alarm": 0.091
+  },
+  "top2pct": {
+   "realized_rate": 0.1,
+   "missed_danger": 0.6422,
+   "false_alarm": 0.095
+  },
+  "top1pct": {
+   "realized_rate": 0.1,
+   "missed_danger": 0.5619,
+   "false_alarm": 0.097
+  }
+ },
+ "clamp_acausal": {
+  "top5pct": {
+   "realized_rate": 0.138,
+   "missed_danger": 0.1339,
+   "false_alarm": 0.1
+  },
+  "top2pct": {
+   "realized_rate": 0.138,
+   "missed_danger": 0.0048,
+   "false_alarm": 0.12
+  },
+  "top1pct": {
+   "realized_rate": 0.138,
+   "missed_danger": 0.0,
+   "false_alarm": 0.129
+  }
+ },
+ "clamp_causal": {
+  "top5pct": {
+   "realized_rate": 0.139,
+   "missed_danger": 0.1324,
+   "false_alarm": 0.1
+  },
+  "top2pct": {
+   "realized_rate": 0.139,
+   "missed_danger": 0.0048,
+   "false_alarm": 0.121
+  },
+  "top1pct": {
+   "realized_rate": 0.139,
+   "missed_danger": 0.0,
+   "false_alarm": 0.13
+  }
+ }
+}
