@@ -137,7 +137,7 @@ def main():
                 fmt="s",color="#2E75B6",ms=7,capsize=2.5,zorder=5,
                 label="safety clamp (proposed), $m$=0.02")
     ax.set_xlabel("realized intervention rate",fontsize=9)
-    ax.set_ylabel("missed-danger rate (event-pooled,\nsame convention as Table V)",fontsize=9)
+    ax.set_ylabel("missed-danger rate\n(event-pooled composite panel)",fontsize=9)
     ax.legend(fontsize=7.5); ax.grid(color="0.92",lw=0.6)
     for s in ("top","right"): ax.spines[s].set_visible(False)
     fig.tight_layout(); fig.savefig(os.path.join(here,"Paper4_RateMatched.png"),bbox_inches="tight")
