@@ -1,7 +1,7 @@
-# Bounded Under-Protection During Online Recalibration of Forward-Collision Avoidance
+# A Safety Clamp for Adaptive Forward-Collision
+Avoidance in Intelligent Vehicles
 
-Code, derived results, and figures for the paper *"Bounded Under-Protection
-During Online Recalibration of Forward-Collision Avoidance"*
+Code, derived results, and figures for the paper *"A Safety Clamp for Adaptive Forward-Collision Avoidance in Intelligent Vehicles"*
 (M. B. Hossain, M. A. S. Kamal, and K. Yamada, submitted to
 *IEEE Transactions on Intelligent Vehicles*, 2026).
 
