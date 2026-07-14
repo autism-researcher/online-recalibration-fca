@@ -138,7 +138,10 @@ def main():
                 label="safety clamp (proposed), $m$=0.02")
     ax.set_xlabel("realized intervention rate",fontsize=9)
     ax.set_ylabel("missed-danger rate\n(event-pooled composite panel)",fontsize=9)
-    ax.legend(fontsize=7.5); ax.grid(color="0.92",lw=0.6)
+    ax.set_ylim(-0.03,0.70)
+    ax.legend(fontsize=7.5,loc="center left",bbox_to_anchor=(0.08,0.45),
+              framealpha=0.95)
+    ax.grid(color="0.92",lw=0.6)
     for s in ("top","right"): ax.spines[s].set_visible(False)
     fig.tight_layout(); fig.savefig(os.path.join(here,"Paper4_RateMatched.png"),bbox_inches="tight")
     print("wrote revision_results_part4.json, rows_causal_*.jsonl, Paper4_RateMatched.png")
