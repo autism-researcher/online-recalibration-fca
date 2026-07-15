@@ -122,6 +122,26 @@ def load_pet_events(dataset, path):
 # ======================================================================
 # 2. Supervisor -- identical to the main paper (do not modify)
 # ======================================================================
+def _perstep_U(R, tau=TAU, t0=50):
+    """Fully causal slow quantile, refreshed EVERY step (Algorithm 1 /
+    Eq. (2)): expanding window up to NS samples, then rolling NS; the window
+    is strictly prior (ends at t-1). Vectorized like the official
+    revision_reruns_part4.U_perstep. (2026-07 corrections: previously the
+    panel included the current observation and refreshed every 25 steps.)"""
+    from numpy.lib.stride_tricks import sliding_window_view
+    T = len(R)
+    U = np.empty(T)
+    U[:t0] = np.quantile(R[:max(1, t0)], 1.0 - tau)
+    for p in range(t0, min(NS, T)):                 # expanding phase, per step
+        U[p] = np.quantile(R[:p], 1.0 - tau)
+    if T > NS:
+        sw = sliding_window_view(R, NS)             # rolling phase, per step (chunked)
+        for c in range(NS, T, 1500):
+            hi = min(c + 1500, T)
+            U[c:hi] = np.quantile(sw[c - NS:hi - NS], 1.0 - tau, axis=1)  # window ends at t-1
+    return U
+
+
 def run_supervisor(R, mode):
     """Return a boolean intervention series for one segment.
     mode in {'fixed','online','clamp'}."""
@@ -132,21 +152,14 @@ def run_supervisor(R, mode):
     base = R[:min(NS, n)]
     B_fixed = np.quantile(base, 1.0 - TAU) if len(base) else 0.5
     B = B_fixed
-    U = B_fixed                                     # slow causal estimate, refreshed on a stride
-    STRIDE = 25                                     # the slow estimate moves slowly; recompute every STRIDE steps
+    Uarr = _perstep_U(R) if mode == "clamp" else None
     for t in range(n):
         if mode == "fixed":
             B_eff = B_fixed
         elif mode == "online":
             B_eff = B
         elif mode == "clamp":
-            if t % STRIDE == 0:
-                # strictly-prior window {t-NS, ..., t-1}, matching Eq. (2) /
-                # Algorithm 1 (2026-07 correction: previously included the
-                # current observation R[t])
-                lo = max(0, t - NS)
-                U = float(np.quantile(R[lo:t], 1.0 - TAU)) if t > 0 else B_fixed
-            B_eff = min(B, U + MARGIN)
+            B_eff = min(B, Uarr[t] + MARGIN)
         else:
             raise ValueError(mode)
         fire = R[t] > B_eff
