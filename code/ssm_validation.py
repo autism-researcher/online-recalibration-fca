@@ -141,8 +141,11 @@ def run_supervisor(R, mode):
             B_eff = B
         elif mode == "clamp":
             if t % STRIDE == 0:
-                lo = max(0, t - NS + 1)
-                U = float(np.quantile(R[lo:t + 1], 1.0 - TAU))
+                # strictly-prior window {t-NS, ..., t-1}, matching Eq. (2) /
+                # Algorithm 1 (2026-07 correction: previously included the
+                # current observation R[t])
+                lo = max(0, t - NS)
+                U = float(np.quantile(R[lo:t], 1.0 - TAU)) if t > 0 else B_fixed
             B_eff = min(B, U + MARGIN)
         else:
             raise ValueError(mode)
