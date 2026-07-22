@@ -33,8 +33,8 @@ TAU, SEG, WARMUP, HALFWIDTH = 0.10, 15000, 1500, 0.03
 
 
 def corpus_R(features_path, max_traj=None):
-    w = np.array(json.load(open(Path(features_path).parents[2] / "carla_weights.json"))["weights"])
-    d = json.load(open(features_path))
+    w = np.array(json.load(open(Path(features_path).parents[2] / "carla_weights.json", encoding="utf-8-sig"))["weights"])
+    d = json.load(open(features_path, encoding="utf-8-sig"))
     parts = []
     for i, tr in enumerate(d["trajectories"]):
         if max_traj and i >= max_traj:

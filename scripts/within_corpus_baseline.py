@@ -33,8 +33,8 @@ TAU, GAMMA, NS, MARGIN, W, WARMUP, SEG, TRAIN = 0.10, 0.05, 2500, 0.02, 600, 150
 
 
 def corpus_R(features_path):
-    w = np.array(json.load(open(Path(features_path).parents[2] / "carla_weights.json"))["weights"])
-    d = json.load(open(features_path))
+    w = np.array(json.load(open(Path(features_path).parents[2] / "carla_weights.json", encoding="utf-8-sig"))["weights"])
+    d = json.load(open(features_path, encoding="utf-8-sig"))
     return np.concatenate([np.asarray(t["features"], float) @ w
                            for t in d["trajectories"] if len(t["features"])])
 

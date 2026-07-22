@@ -34,7 +34,7 @@ def risk_stream(corpus, weights):
     os.makedirs(CACHE_DIR, exist_ok=True)
     path=os.path.join(FEATURES_DIR, f"{corpus}_features.json")
     print(f"  regenerating {corpus} risk from {path} ...")
-    d=json.load(open(path))                       # json handles Infinity in ttc_raw
+    d=json.load(open(path, encoding="utf-8-sig"))                       # json handles Infinity in ttc_raw
     R=np.concatenate([np.asarray(tr["features"],float)@weights for tr in d["trajectories"]])
     np.save(cache, R.astype(np.float32)); return R.astype(np.float64)
 
@@ -147,7 +147,7 @@ def ngsim_excluded():
 
 def main():
     os.makedirs(OUT_DIR,exist_ok=True)
-    weights=np.array(json.load(open(WEIGHTS_JSON))["weights"],float)
+    weights=np.array(json.load(open(WEIGHTS_JSON, encoding="utf-8-sig"))["weights"],float)
     per={}; counts={}
     for c in CORP:
         R=risk_stream(c,weights); nseg=len(R)//SEG; counts[c]=nseg

@@ -80,10 +80,10 @@ def load_kinematics_and_risk(dataset, features_path, weights_path, seg_len=15000
     60 m) re-export dhw and closing speed with export_kinematics.py.
     """
     import json
-    cfg = json.load(open(weights_path))
+    cfg = json.load(open(weights_path, encoding="utf-8-sig"))
     w = np.asarray(cfg["weights"], float)                 # (8,)
     b = cfg["bounds"]["headway"]; hmin, hmax = b["min"], b["max"]
-    data = json.load(open(features_path))
+    data = json.load(open(features_path, encoding="utf-8-sig"))
     trajs = data["trajectories"] if isinstance(data, dict) else data
     if max_traj:
         trajs = trajs[:max_traj]

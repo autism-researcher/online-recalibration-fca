@@ -48,7 +48,7 @@ def load_corpus(features_path):
     """Return (R, ttc) as 1-D arrays over the concatenated corpus stream."""
     with open(features_path) as f:          # json natively accepts Infinity/NaN
         d = json.load(f)
-    w = np.array(json.load(open(Path(features_path).parents[2] / "carla_weights.json"))["weights"])
+    w = np.array(json.load(open(Path(features_path).parents[2] / "carla_weights.json", encoding="utf-8-sig"))["weights"])
     R_parts, ttc_parts = [], []
     for tr in d["trajectories"]:
         feats = np.asarray(tr["features"], dtype=float)      # T x 8, normalized
