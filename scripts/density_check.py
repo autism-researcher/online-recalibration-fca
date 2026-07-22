@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Paper 4 - density-at-the-boundary check (answers the reviewer's f_min > 0 concern).
+This paper - density-at-the-boundary check (answers the reviewer's f_min > 0 concern).
 
 Proposition 1 needs the risk density f_t at the (1-tau)-quantile bounded below. The paper
 states f >= 0.8 on all 429 segments; this script *shows* it from the released features:
@@ -8,7 +8,7 @@ per corpus it (a) builds the pooled risk distribution and marks the (1-tau)-quan
 (b) estimates, per 15000-step segment, the kernel density of R at that segment's quantile
 (half-width 0.03, the value used in the paper), then reports the minimum across segments.
 
-Outputs: Paper4_Density_Check.png  +  density_check_results.json
+Outputs: Clamp_Density_Check.png  +  density_check_results.json
 
 USAGE: python density_check.py --root "D:\\New Paper3\\paper3_pipeline" --corpora highd ngsim waymo
 NOTE : highd/waymo load with the stdlib json (it accepts the Infinity tokens in ttc_raw,
@@ -88,7 +88,7 @@ def main():
                 ax.set_xlabel("composite risk R")
     if HAVE_MPL:
         fig.tight_layout()
-        fig.savefig(Path(__file__).with_name("Paper4_Density_Check.png"), dpi=200, bbox_inches="tight")
+        fig.savefig(Path(__file__).with_name("Clamp_Density_Check.png"), dpi=200, bbox_inches="tight")
     Path(__file__).with_name("density_check_results.json").write_text(json.dumps(out, indent=2))
     print(json.dumps(out, indent=2))
     print("\nmin segment density per corpus:", seg_mins)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Paper 4 - within-corpus (per-segment train/test) baseline for the rate-deviation comparison.
+This paper - within-corpus (per-segment train/test) baseline for the rate-deviation comparison.
 
 WHY THIS EXISTS
   A reviewer asked whether the fixed boundary looks bad only because it is calibrated

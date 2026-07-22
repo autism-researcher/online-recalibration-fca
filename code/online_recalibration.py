@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Paper 4 - real-data test harness for the online recalibration scaling law.
+This paper - real-data test harness for the online recalibration scaling law.
 
 WHAT THIS DOES
   Tests, on YOUR licensed NGSIM / HighD / Waymo data, the two predictions of the
-  corrected derivation (see Paper4_Derivation_Scaffold.md):
+  corrected derivation in the manuscript/supplement:
       gamma*  proportional to  Delta^(2/3) * f^(-1/3)
   where Delta = local drift velocity of the (1-tau)-boundary, f = density of the
   risk functional at that boundary. It also confirms online ACI beats static/batch.
@@ -12,7 +12,7 @@ WHAT THIS DOES
 WHAT YOU MUST PROVIDE (two hooks, marked TODO):
   1. load_real_streams(dataset, path) -> yields 1-D numpy arrays of risk values R_t
      in temporal order (one array per scene/track/segment). Use the SAME R(x) you
-     used in Paper 3 (spacing, relative velocity, TTC -> normalized -> aggregated).
+     used in the companion calibration/audit study (spacing, relative velocity, TTC -> normalized -> aggregated).
   2. nothing else - the estimators and tests below are dataset-agnostic.
 
 HONESTY NOTE: run this yourself on the real data. Do not accept any numbers you
@@ -32,15 +32,15 @@ np.seterr(all="ignore")
 def load_real_streams(dataset, path):
     """Yield 1-D arrays of risk values R_t (in [0,1]) in temporal order.
 
-    dataset in {'ngsim','highd','waymo'}. Implement using YOUR Paper-3 pipeline:
+    dataset in {'ngsim','highd','waymo'}. Implement using the companion calibration/audit pipeline:
       - read trajectories (NGSIM: vehicle trajectory CSV; HighD: *_tracks.csv via
         the levelXdata tools; Waymo: Open Motion scenario protos),
       - compute per-step safety features (spacing, rel. velocity, TTC, ...),
-      - normalize to [0,1] and aggregate into R_t exactly as in Paper 3,
+      - normalize to [0,1] and aggregate into R_t exactly as in the companion calibration/audit study,
       - yield one array per scene ordered by time.
     """
     raise NotImplementedError(
-        "Plug in your Paper-3 R(x) pipeline here. Yield np.ndarray risk streams.")
+        "Plug in your companion R(x) pipeline here. Yield np.ndarray risk streams.")
 
 # ----------------------------------------------------------------------
 # Recalibrators (identical to the validated clean-test code)

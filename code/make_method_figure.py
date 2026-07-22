@@ -33,7 +33,7 @@ ax.text(5,93.5,"Safety-supervision system",fontsize=9,style="italic")
 box(ax,6,78,27,9,"Vehicle & environmental\nstate inputs","105")
 box(ax,6,64,27,8,"Operator target\nintervention rate  $\\tau$","")
 box(ax,40,76,23,11,"Risk computation\nmodule  R(x)","110")
-box(ax,5,44,27,10,"Online recalibration\nmodule — boundary B(t)","120",fs=9)
+box(ax,5,44,27,10,"Online recalibration\nmodule - boundary B(t)","120",fs=9)
 box(ax,37,44,26,10,"Change-point\ndetector (CUSUM)","140",fs=9)
 box(ax,68,44,27,10,"Sliding-window\nfinite-sample\ncertificate (DKW)","150",fs=8.5)
 box(ax,27,26.5,46,11,"Safety-clamp module\nslow estimate U(t);  B_eff = min( B(t), U(t)+m )","130",fs=9)
@@ -108,6 +108,6 @@ f3.subplots_adjust(bottom=0.16)
 
 for f,n in [(f1,"fig1"),(f2,"fig2"),(f3,"fig3")]:
     f.savefig(f"{OUT}/_patent_{n}.png",dpi=200,bbox_inches="tight")
-with PdfPages(f"{OUT}/Paper4_Patent_Figures_v4.pdf") as pdf:
+with PdfPages(f"{OUT}/Clamp_Patent_Figures_v4.pdf") as pdf:
     for f in (f1,f2,f3): pdf.savefig(f,bbox_inches="tight")
 print("figures written")

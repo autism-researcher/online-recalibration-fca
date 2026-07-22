@@ -17,16 +17,12 @@ naturalistic driving data and in closed-loop CARLA conflicts.
 The experiments use three naturalistic driving corpora obtained from their providers under the
 respective terms of use:
 
-- **highD** — Institute for Automotive Engineering (ika), RWTH Aachen University, via levelXdata
-- **NGSIM** — U.S. Federal Highway Administration
-- **Waymo Open Motion Dataset** — Waymo LLC
+- **highD** - Institute for Automotive Engineering (ika), RWTH Aachen University, via levelXdata
+- **NGSIM** - U.S. Federal Highway Administration
+- **Waymo Open Motion Dataset** - Waymo LLC
 
 **These datasets are licensed and are NOT redistributed in this repository.** To reproduce the
-results, obtain the datasets from their providers and point the scripts at your local copy
-(`--root` argument). This repository contains only the code, the small derived result files
-(JSON/CSV), and the figures. The per-step feature and TTC streams are likewise not
-redistributed; the code regenerates them from provider-obtained data, and they are needed
-only for the fixed-TTC AEB arm of the composite safety panel.
+results, obtain the datasets from their providers and point the scripts at your local copy by editing the data-location constants at the top of the scripts, or by using `--root` where a script provides it. This repository contains the code, the small derived result files (JSON/CSV), the figures, and the exact frozen risk-score specification (`carla_weights.json`). The per-step feature and TTC streams are not redistributed; the code regenerates them from provider-obtained data, and they are needed only for the fixed-TTC AEB arm of the composite safety panel.
 
 ## Repository layout
 
@@ -55,9 +51,10 @@ subset runs (e.g., 429- or 143-segment exploratory passes) are superseded.
 
 ```bash
 pip install numpy matplotlib sortedcontainers
-# Data locations are configured as constants at the top of each script:
-# edit FEATURES_DIR / WEIGHTS_JSON / CACHE_DIR (etc.) to your local copies
-# of the frozen feature pipeline and the cached risk streams, then run:
+# Data locations are configured as constants at the top of each script.
+# The frozen weights are included as carla_weights.json in this repository.
+# Edit FEATURES_DIR / CACHE_DIR (etc.) to your local copies of the
+# frozen feature pipeline and cached risk streams, then run:
 python scripts/full_hardware_run.py
 python scripts/reconcile_safety_panel.py
 python scripts/density_check.py
@@ -70,18 +67,18 @@ python scripts/within_corpus_baseline.py
 regenerable from the cached risk streams (paths at the top of
 `revision_reruns.py`):
 
-- `revision_reruns.py` — causal implementation, boundary-reset sensitivity
-- `revision_reruns_part2.py` — causal margin sweep and bare slow quantile
-- `revision_reruns_part3.py` — Table V panel, self-validated against the
+- `revision_reruns.py` - causal implementation, boundary-reset sensitivity
+- `revision_reruns_part2.py` - causal margin sweep and bare slow quantile
+- `revision_reruns_part3.py` - Table V panel, self-validated against the
   archived methodology
-- `revision_reruns_part4.py` — **official per-step results**, refresh-interval
+- `revision_reruns_part4.py` - **official per-step results**, refresh-interval
   sensitivity, event-pooled rate-matched sweep with Wilson intervals
-- `verify_scripts_selftest.py` — checks every function above against naive
+- `verify_scripts_selftest.py` - checks every function above against naive
   loop implementations on random data (all lines must print PASS)
 
 `results/per_segment/rows_causal_{highd,ngsim,waymo}.jsonl` hold the official
 per-segment results (fixed/batch/online/clamp, per-step causal
-implementation) that back the paper's Tables I–IV; the aggregate outputs are
+implementation) that back the paper's Tables I-IV; the aggregate outputs are
 in `results/revision_results*.json`. These files contain no licensed
 trajectory data.
 
@@ -89,13 +86,13 @@ trajectory data.
 
 - The online update holds the time-averaged intervention rate near target (deviation 0.0032),
   an order of magnitude or more below fixed (0.146), batch (0.131), and change-point-gated
-  (0.063) baselines — and below fixed and batch on every one of the 547 segments.
+  (0.063) baselines - and below fixed and batch on every one of the 547 segments.
 - The same update leaves a large transient under-protection (mean segment-wise
-  peak 0.363); the safety clamp cuts it to 0.106–0.135 (63–71%) at a modest,
-  tunable rate cost — a gap that persists when the online update is
+  peak 0.363); the safety clamp cuts it to 0.106-0.135 (63-71%) at a modest,
+  tunable rate cost - a gap that persists when the online update is
   rate-matched to the clamp's realized budget.
 - Externally thresholded surrogate panel (TTC/DRAC): the online update misses
-  17–34% of danger events; the clamp misses 1–3%.
+  17-34% of danger events; the clamp misses 1-3%.
 - Controlled closed-loop CARLA conflicts: the clamp eliminated all observed collisions
   (0, against the online update's 42 across the two conflict-producing scenarios).
 - The estimated risk-score density at the boundary exceeds 0.86 on every segment

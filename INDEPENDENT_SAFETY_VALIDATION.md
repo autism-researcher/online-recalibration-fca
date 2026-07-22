@@ -1,12 +1,12 @@
-# Independent Safety Validation — how to run it and fold it into the paper
+# Independent Safety Validation - how to run it and fold it into the paper
 
 This addresses the main reviewer concern directly: safety evidence from **independent**
 surrogate measures and from a setting where the supervisor is the operative safety layer.
 Nothing here is written into the paper until you have produced real numbers.
 
-## Step 1 — Run the offline SSM panel (fastest; reuses data you already have)
+## Step 1 - Run the offline SSM panel (fastest; reuses data you already have)
 
-The data hook is **already wired** to your Paper-3 cached feature exports
+The data hook is **already wired** to your companion cached feature exports
 (`results/per_dataset/<dataset>_features.json`), which carry the 8 features and `ttc_raw`
 per step. R is reconstructed with the frozen weights; distance headway is recovered from the
 headway feature; DRAC is derived from the recorded TTC and headway. Run, from the repo root,
@@ -32,7 +32,7 @@ Notes:
   (online) to 0.03-0.04 across TTC<1.5, TTC<1.0, DRAC>3.4, DRAC>7.5. Re-run on the full data
   for the numbers to report.
 
-## Step 2 — Run the controlled CARLA conflicts (isolates the supervisor)
+## Step 2 - Run the controlled CARLA conflicts (isolates the supervisor)
 
 With CARLA 0.9.13 running, and `carla_fca_recalibration.py` in the same folder:
 
@@ -44,29 +44,29 @@ python carla/carla_conflict_scenarios.py --scenario crossing   --seeds 0-29 --ou
 
 These report ground-truth collisions, min-TTC, min-DRAC, and PET (crossing) per arm.
 
-## Step 3 — Send me the CSVs
+## Step 3 - Send me the CSVs
 
 Once you have the real `ssm_*.csv` and `cs_*.csv`, send them to me. I will add a new
 **Section: Independent Safety Validation** to the paper, built only from your numbers, using
 the table templates below. I will not fill any cell you did not measure.
 
-### Template — offline SSM panel (fill from ssm_*.csv)
+### Template - offline SSM panel (fill from ssm_*.csv)
 
 | SSM | fixed | online | online+clamp |
 |---|---|---|---|
 | missed-danger, TTC < 1.5 s | _ | _ | _ |
 | missed-danger, TTC < 1.0 s | _ | _ | _ |
-| missed-danger, DRAC > 3.4 m/s² | _ | _ | _ |
-| missed-danger, DRAC > 7.5 m/s² | _ | _ | _ |
+| missed-danger, DRAC > 3.4 m/sÂ² | _ | _ | _ |
+| missed-danger, DRAC > 7.5 m/sÂ² | _ | _ | _ |
 | missed-danger, PET < 1.5 s | _ | _ | _ |
 | false-alarm (matched rate) | _ | _ | _ |
 
-### Template — controlled CARLA conflicts (fill from cs_*.csv)
+### Template - controlled CARLA conflicts (fill from cs_*.csv)
 
 | Scenario | arm | collision rate | mean min-TTC | mean min-DRAC | PET |
 |---|---|---|---|---|---|
-| lead_brake | online / clamp | _ | _ | _ | — |
-| cut_in | online / clamp | _ | _ | _ | — |
+| lead_brake | online / clamp | _ | _ | _ | - |
+| cut_in | online / clamp | _ | _ | _ | - |
 | crossing | online / clamp | _ | _ | _ | _ |
 
 ## How this maps to reviewer concerns
@@ -79,6 +79,6 @@ the table templates below. I will not fill any cell you did not measure.
 ## Honesty guardrail
 
 If the clamp does **not** separate on real data or in the controlled scenarios, we report it
-and soften the safety language — the diagnosis and the proven bound do not depend on these
+and soften the safety language - the diagnosis and the proven bound do not depend on these
 outcomes. Pre-register on OSF (see `PREREGISTRATION.md`) **before** running, so the result is
 credible either way.

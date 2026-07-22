@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Paper 4 - single-pass reconciliation of the TTC danger panel (Section V-F + Table VIII).
+This paper - single-pass reconciliation of the TTC danger panel (Section V-F + Table VIII).
 
 WHY THIS EXISTS
   Two TTC<1.5 s counts disagreed across the manuscript:

@@ -50,13 +50,13 @@ operative safety layer.
 Outcomes that do not support a hypothesis are reported as such. The paper's *diagnosis* of
 transient under-protection and the *proven bound* do not depend on H1-H3.
 
-## 2. Part A — Offline SSM panel (completed; deterministic)
+## 2. Part A - Offline SSM panel (completed; deterministic)
 
 - **Code:** `code/ssm_validation.py` (fixed bootstrap seed).
-- **Data:** Paper-3 cached feature exports for HighD, NGSIM, Waymo; frozen eight-feature risk and
+- **Data:** companion cached feature exports for HighD, NGSIM, Waymo; frozen eight-feature risk and
   weights (`carla_weights.json`). No feature or weight retuned.
-- **Measures (standard, fixed independent of the data):** TTC<1.5 s, TTC<1.0 s, DRAC>3.4 m/s²,
-  DRAC>7.5 m/s². PET<1.5 s reported only where a crossing conflict point is defined.
+- **Measures (standard, fixed independent of the data):** TTC<1.5 s, TTC<1.0 s, DRAC>3.4 m/sÂ²,
+  DRAC>7.5 m/sÂ². PET<1.5 s reported only where a crossing conflict point is defined.
 - **Methods:** fixed, online, online+clamp (m = 0.02).
 - **Primary:** missed-danger rate per measure. **Secondary:** false-alarm rate.
 - **Uncertainty:** percentile bootstrap over segments, 2000 resamples, 95% CIs. Pooled
@@ -64,7 +64,7 @@ transient under-protection and the *proven bound* do not depend on H1-H3.
 - **Pre-set exclusion:** measures with < 20 danger events in a corpus are flagged negligible for
   that corpus (HighD has near-zero conflicts).
 
-## 3. Part B — Controlled CARLA conflicts (confirmatory replication after registration)
+## 3. Part B - Controlled CARLA conflicts (confirmatory replication after registration)
 
 - **Code:** `carla/carla_conflict_scenarios.py`, CARLA 0.9.13.
 - **Operative-supervisor setup (frozen):** ego NOT on Traffic Manager autopilot; a nominal
@@ -74,9 +74,9 @@ transient under-protection and the *proven bound* do not depend on H1-H3.
   composite risk over that drive; the same samples seed the clamp.
 - **Frozen scenario parameters:** cruise 50 km/h; episode 20 s; warm-up 4 s; conflict trigger at
   t = 8 s; hazard spawned ~25 m ahead with positional spawn retries; DT = 0.05 s; Town03.
-  1. **lead_brake** — lead vehicle hard-brakes at t = 8 s.
-  2. **cut_in** — adjacent-lane vehicle steers into the ego lane at t = 8 s.
-  3. **crossing** — pedestrian crosses the ego path at t = 8 s (PET measured where it registers).
+  1. **lead_brake** - lead vehicle hard-brakes at t = 8 s.
+  2. **cut_in** - adjacent-lane vehicle steers into the ego lane at t = 8 s.
+  3. **crossing** - pedestrian crosses the ego path at t = 8 s (PET measured where it registers).
 - **Arms:** fixed, online, online+clamp (m = 0.02), fixed-TTC AEB (reference).
 - **Seeds:** 0-29 per scenario (fixed); spawn point indexed by seed.
 - **Primary outcome:** ground-truth collision rate per arm per scenario (collision sensor).

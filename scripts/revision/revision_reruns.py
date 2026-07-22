@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Three reviewer-requested reruns for T-IV-26-07-0524, from the cached risk
 streams. Run:  python revision_reruns.py
-Outputs revision_results.json + Paper4_RateMatched.png in this folder.
+Outputs revision_results.json + Clamp_RateMatched.png in this folder.
 
 STUDY 1  Causal-official: all methods with fully causal expanding-window U_t
          initialization (no future samples ever). These become the official
@@ -135,7 +135,7 @@ def run_all():
         n=len(R)//SEG
         try: masks,joins=boundary_mask_and_resets(c,n)
         except Exception as e:
-            masks=joins=None; print(f"[study3] {c}: boundary info unavailable ({e}) — skipping")
+            masks=joins=None; print(f"[study3] {c}: boundary info unavailable ({e}) - skipping")
         for i in range(n):
             S=R[i*SEG:(i+1)*SEG]
             B0=float(np.quantile(S[:WIN],1-TAU))
@@ -199,8 +199,8 @@ def run_all():
     ax.set_ylabel("missed-danger rate (composite panel)",fontsize=9)
     ax.legend(fontsize=7.5); ax.grid(color="0.92",lw=0.6)
     for s in ("top","right"): ax.spines[s].set_visible(False)
-    fig.tight_layout(); fig.savefig(os.path.join(OUT,"Paper4_RateMatched.png"),bbox_inches="tight")
-    print("wrote revision_results.json + Paper4_RateMatched.png")
+    fig.tight_layout(); fig.savefig(os.path.join(OUT,"Clamp_RateMatched.png"),bbox_inches="tight")
+    print("wrote revision_results.json + Clamp_RateMatched.png")
 
 if __name__=="__main__":
     run_all()

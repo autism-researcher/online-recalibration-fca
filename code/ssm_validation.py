@@ -28,7 +28,7 @@ INTEGRITY (read this)
   from a real run on real data that you executed yourself.
 
 HOW IT FITS THE PIPELINE
-  Your Paper-3 feature extractors already compute, per timestep, the quantities the
+  Your companion feature extractors already compute, per timestep, the quantities the
   SSMs need: raw TTC (s), spacing / distance headway dhw (m), closing speed (m/s),
   and ego longitudinal acceleration (m/s^2). Wire those into `load_kinematics_and_risk`.
   The supervisor is reproduced here exactly as in the paper (eight-feature risk R_t
@@ -65,9 +65,9 @@ PET_THRESHOLD   = 1.5                   # seconds (event-based)
 # 1. DATA HOOKS  --  implement these for your licensed data (TODO)
 # ======================================================================
 def load_kinematics_and_risk(dataset, features_path, weights_path, seg_len=15000, max_traj=None):
-    """Real loader for the Paper-3 cached per-dataset feature export.
+    """Real loader for the companion cached per-dataset feature export.
 
-    Reads `<dataset>_features.json` (produced by the Paper-3 pipeline; each trajectory
+    Reads `<dataset>_features.json` (produced by the companion calibration/audit pipeline; each trajectory
     carries the 8 normalized features and `ttc_raw` in seconds), reconstructs the
     per-step risk R_t = features . weights, recovers distance headway from the headway
     feature via the frozen normalization (bounds 2..60 m), concatenates everything in
@@ -281,7 +281,7 @@ def synthetic_segments(n_seg=12, n=4000, seed=1):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dataset", choices=["highd", "ngsim", "waymo"])
-    ap.add_argument("--features", help="path to <dataset>_features.json (Paper-3 cached export)")
+    ap.add_argument("--features", help="path to <dataset>_features.json (companion cached export)")
     ap.add_argument("--weights", help="path to carla_weights.json")
     ap.add_argument("--max-traj", type=int, default=None, help="cap trajectories (debug)")
     ap.add_argument("--synthetic", action="store_true",

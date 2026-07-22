@@ -14,8 +14,9 @@ import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 
 # ----------------- CONFIG (edit if needed) -----------------
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEATURES_DIR = r"D:\New Paper3\paper3_pipeline\results\per_dataset"   # {corpus}_features.json
-WEIGHTS_JSON = r"D:\New Paper3\paper3_pipeline\carla_weights.json"
+WEIGHTS_JSON = os.path.join(REPO_ROOT, "carla_weights.json")
 SSM_DIR      = r"D:\ROMBUN_HAKASE_PhD\online-recalibration-fca"       # ssm_{corpus}.csv
 CACHE_DIR    = r"D:\ROMBUN_HAKASE_PhD\full_risk_streams"              # cached {corpus}_risk.npy
 OUT_DIR      = r"D:\ROMBUN_HAKASE_PhD\referee_revisions"
@@ -150,7 +151,7 @@ def main():
     per={}; counts={}
     for c in CORP:
         R=risk_stream(c,weights); nseg=len(R)//SEG; counts[c]=nseg
-        print(f"[{c}] {nseg} segments — running all ...")
+        print(f"[{c}] {nseg} segments - running all ...")
         rows=[]; t0=time.time()
         for i in range(nseg):
             rows.append(methods_for_segment(R[i*SEG:(i+1)*SEG]))

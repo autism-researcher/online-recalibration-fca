@@ -2,13 +2,13 @@
 """Part 4: (a) OFFICIAL results with U_t updated EVERY STEP (matching
 Algorithm 1 exactly); (b) refresh-interval sensitivity (1/5/25 steps);
 (c) rate-matched online sweep in the EVENT-POOLED convention of Table V,
-with Wilson CIs, + regenerated Paper4_RateMatched.png with error bars;
+with Wilson CIs, + regenerated Clamp_RateMatched.png with error bars;
 (d) per-segment causal result files for the repository.
 
 Run:  python revision_reruns_part4.py     (longest run: per-step rolling
 quantiles; expect roughly 30-60 min. Progress prints per corpus.)
 Writes revision_results_part4.json, rows_causal_{corpus}.jsonl,
-Paper4_RateMatched.png. Importing this module only defines functions.
+Clamp_RateMatched.png. Importing this module only defines functions.
 """
 import json, os
 import numpy as np
@@ -143,8 +143,8 @@ def main():
               framealpha=0.95)
     ax.grid(color="0.92",lw=0.6)
     for s in ("top","right"): ax.spines[s].set_visible(False)
-    fig.tight_layout(); fig.savefig(os.path.join(here,"Paper4_RateMatched.png"),bbox_inches="tight")
-    print("wrote revision_results_part4.json, rows_causal_*.jsonl, Paper4_RateMatched.png")
+    fig.tight_layout(); fig.savefig(os.path.join(here,"Clamp_RateMatched.png"),bbox_inches="tight")
+    print("wrote revision_results_part4.json, rows_causal_*.jsonl, Clamp_RateMatched.png")
 
 if __name__=="__main__":
     main()

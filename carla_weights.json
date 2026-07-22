@@ -1,0 +1,27 @@
+﻿{
+  "source": "Frozen companion calibration/audit risk-score specification; inherited unchanged and not retuned in this paper.",
+  "risk_score": "R = sum_i w_i f_i(x_t); no division by sum_i w_i; maximum possible score is 0.94, contained in [0,1].",
+  "feature_names": [
+    "speed",
+    "longitudinal_acceleration",
+    "longitudinal_jerk",
+    "steering_variation",
+    "lane_offset",
+    "time_to_collision",
+    "headway_distance_gap",
+    "local_density"
+  ],
+  "weights": [0.08, 0.10, 0.10, 0.08, 0.12, 0.25, 0.15, 0.06],
+  "weight_sum": 0.94,
+  "features": [
+    {"index": 1, "name": "speed", "mapping": "increasing", "bound": 28.0, "unit": "m/s", "weight": 0.08},
+    {"index": 2, "name": "longitudinal_acceleration", "mapping": "increasing", "bound": 7.0, "unit": "m/s^2", "weight": 0.10},
+    {"index": 3, "name": "longitudinal_jerk", "mapping": "increasing", "bound": 12.0, "unit": "m/s^3", "weight": 0.10},
+    {"index": 4, "name": "steering_variation", "mapping": "increasing", "bound": 0.35, "unit": "rad", "weight": 0.08},
+    {"index": 5, "name": "lane_offset", "mapping": "increasing", "bound": 1.5, "unit": "m", "weight": 0.12},
+    {"index": 6, "name": "time_to_collision", "mapping": "decreasing", "bounds": [0.5, 8.0], "unit": "s", "weight": 0.25},
+    {"index": 7, "name": "headway_distance_gap", "mapping": "decreasing", "bounds": [2.0, 60.0], "unit": "m", "weight": 0.15},
+    {"index": 8, "name": "local_density", "mapping": "increasing", "bound": 25.0, "unit": "vehicles within 35 m", "weight": 0.06}
+  ],
+  "normalization_note": "Increasing features are linearly saturated to [0,1] up to the stated bound. TTC and headway use decreasing saturation, so smaller values imply larger risk. The weights are deliberately not renormalized."
+}
