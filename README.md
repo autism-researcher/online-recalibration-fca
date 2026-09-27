@@ -47,9 +47,10 @@ scripts/ngsim_denoise_sensitivity.py   NGSIM low-pass cutoff sweep (offline feat
 scripts/density_check.py               boundary-density estimate (Proposition 1 condition)
 ```
 
-The remaining scripts and result files (`code/`, `scripts/revision/`, the other files in
-`scripts/` and `results/`) belong to an earlier version of the study and are kept for
-the record. The paper's values come from `scripts/final/`.
+The remaining files (`code/`, `figures/`, `Results_1/`, `scripts/revision/`, the other
+scripts in `scripts/` and result files in `results/`, `ssm_*.csv` and `pilot*.csv`) belong
+to an earlier version of the study and are kept for the record. The paper's values come
+from `scripts/final/`, and its figures are in `results/final/causal/figures/`.
 
 ## Reproducing the results
 
@@ -65,7 +66,7 @@ the configuration, the bootstrap seed and the software versions.
 
 - The online update holds the intervention rate near the target (mean rate deviation
   0.0033, against 0.140 for the fixed boundary and 0.127 for periodic batch
-  recalibration) and is below the fixed boundary on every segment.
+  recalibration); its deviation is below the fixed boundary's on all 547 segments.
 - Its mean segment-wise maximum under-protection is 0.413 against the trailing
   reference (0.382 centered). With the clamp (N_s = 2500, m = 0.02) it is 0.143
   (0.118), at a realized intervention rate of 0.138 against the target 0.10.
