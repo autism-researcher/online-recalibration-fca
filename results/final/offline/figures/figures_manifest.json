@@ -1,0 +1,60 @@
+{
+ "source": "final_original.json",
+ "source_script_sha256": "4a48ba00b435a1974d3feaf7913f771482fe1c17422d50bda03189fb9c48e05a",
+ "carla_counts": {
+  "cs_lead_b.csv": {
+   "fixed": [
+    0,
+    30
+   ],
+   "online": [
+    27,
+    30
+   ],
+   "clamp": [
+    0,
+    30
+   ],
+   "aeb": [
+    2,
+    30
+   ]
+  },
+  "cs_cut_b.csv": {
+   "fixed": [
+    0,
+    30
+   ],
+   "online": [
+    15,
+    30
+   ],
+   "clamp": [
+    0,
+    30
+   ],
+   "aeb": [
+    0,
+    30
+   ]
+  },
+  "cs_cross_b.csv": {
+   "fixed": [
+    0,
+    30
+   ],
+   "online": [
+    0,
+    30
+   ],
+   "clamp": [
+    0,
+    30
+   ],
+   "aeb": [
+    0,
+    30
+   ]
+  }
+ }
+}

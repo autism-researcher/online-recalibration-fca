@@ -1,0 +1,16 @@
+{
+  "source": "Paper 2 Table II (frozen, do not retune)",
+  "features": ["speed","acceleration","jerk","steer_var","lane_offset","ttc","headway","density"],
+  "weights":  [0.08, 0.10, 0.10, 0.08, 0.12, 0.25, 0.15, 0.06],
+  "sum": 0.94,
+  "bounds": {
+    "speed":        {"type": "upper",  "max": 28.0,   "unit": "m/s"},
+    "acceleration": {"type": "upper",  "max": 7.0,    "unit": "m/s^2"},
+    "jerk":         {"type": "upper",  "max": 12.0,   "unit": "m/s^3"},
+    "steer_var":    {"type": "upper",  "max": 0.35,   "unit": "rad"},
+    "lane_offset":  {"type": "upper",  "max": 1.5,    "unit": "m"},
+    "ttc":          {"type": "range",  "min": 0.5,    "max": 8.0,  "unit": "s"},
+    "headway":      {"type": "range",  "min": 2.0,    "max": 60.0, "unit": "m"},
+    "density":      {"type": "upper",  "max": 25.0,   "unit": "veh/35m"}
+  }
+}

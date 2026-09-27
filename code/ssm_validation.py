@@ -121,7 +121,7 @@ def load_pet_events(dataset, path):
 def _perstep_U(R, tau=TAU, t0=50):
     """Fully causal slow quantile, refreshed EVERY step (Algorithm 1 /
     Eq. (2)): expanding window up to NS samples, then rolling NS; the window
-    is strictly prior (ends at t-1). Vectorized like the official
+    is strictly prior (ends at t-1). Vectorized like the main
     revision_reruns_part4.U_perstep. (2026-07 corrections: previously the
     panel included the current observation and refreshed every 25 steps.)"""
     from numpy.lib.stride_tricks import sliding_window_view

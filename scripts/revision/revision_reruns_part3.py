@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Part 3: Table V (composite safety panel) with the CAUSAL clamp, using the
-official event-pooled methodology of safety_panel.py, self-validated.
+"""Part 3: Table V (composite safety panel) with the causal clamp, using the
+event-pooled methodology of safety_panel.py, with a self-check.
 Run:  python revision_reruns_part3.py
 Writes revision_results_part3.json.
 
 Validation: the fixed/batch/online rows and the ACAUSAL clamp row must
-reproduce Table V of the paper (0.182/0.009/0.166; 0.173/0.012/0.157;
-0.100/0.642/0.095; 0.138/0.005/0.120 at the top-2% threshold). Only then is
-the CAUSAL clamp row (the deliverable) meaningful.
+reproduce Table V of the earlier manuscript (0.182/0.009/0.166;
+0.173/0.012/0.157; 0.100/0.642/0.095; 0.138/0.005/0.120 at the top-2%
+threshold) before the causal clamp row is used.
 """
 import json, os
 import numpy as np

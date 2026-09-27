@@ -82,7 +82,7 @@ def dtaci(R,B0,gammas=(0.005,0.01,0.02,0.05,0.1,0.2),eta=2.0,sigma=1/200):
 def saocp_style(R,B0,gammas=(0.01,0.05,0.2),life=1500,eta=2.0):
     """Strongly-adaptive proxy: experts are ACI learners restarted on a geometric
     covering of the horizon; the active set is aggregated by exponential weights.
-    Faithful in spirit to Bhatnagar et al. 2023 (not the exact algorithm)."""
+    Follows Bhatnagar et al. 2023 in outline (not the exact algorithm)."""
     experts=[]  # each: dict(g,B,w,born)
     ind=np.empty(len(R)); beff=np.empty(len(R))
     for t,r in enumerate(R):

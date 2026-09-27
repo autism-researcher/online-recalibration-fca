@@ -279,7 +279,7 @@ def _betacdfinv(p,aa,bb):
     def betacdf(x):
         if x<=0: return 0.0
         if x>=1: return 1.0
-        # series (continued fraction) — use simple numerical integration
+        # series (continued fraction); use simple numerical integration
         N=2000; xs=np.linspace(1e-9,x,N)
         logpdf=(aa-1)*np.log(xs)+(bb-1)*np.log(1-xs)-(lgamma(aa)+lgamma(bb)-lgamma(aa+bb))
         return np.trapz(np.exp(logpdf),xs)

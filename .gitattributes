@@ -1,0 +1,4 @@
+# Keep the files whose SHA-256 is recorded in the results manifests byte-identical
+# on every platform (no line-ending conversion).
+scripts/final/*.py text eol=lf
+scripts/final/carla_weights.json -text

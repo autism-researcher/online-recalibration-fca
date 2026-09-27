@@ -1,0 +1,2789 @@
+{
+ "summary": {
+  "tracks": 113,
+  "len_median": 2716,
+  "len_max": 3908,
+  "online": {
+   "rate_dev": [
+    0.0032,
+    0.003,
+    0.0034
+   ],
+   "mean_max_up": [
+    0.2472,
+    0.2318,
+    0.2638
+   ],
+   "mean_up": [
+    0.0194,
+    0.0179,
+    0.0209
+   ],
+   "rate": [
+    0.0985,
+    0.0982,
+    0.0989
+   ],
+   "ttc15_steps": 424,
+   "ttc15_step_missed": [
+    0.4387,
+    0.3229,
+    0.5325
+   ],
+   "ttc15_episodes": 74,
+   "ttc15_ep_missed": [
+    0.027,
+    0.0,
+    0.0704
+   ]
+  },
+  "clamp": {
+   "rate_dev": [
+    0.018,
+    0.0138,
+    0.0235
+   ],
+   "mean_max_up": [
+    0.084,
+    0.0762,
+    0.0916
+   ],
+   "mean_up": [
+    0.015,
+    0.0136,
+    0.0165
+   ],
+   "rate": [
+    0.1153,
+    0.1113,
+    0.1202
+   ],
+   "ttc15_steps": 424,
+   "ttc15_step_missed": [
+    0.0236,
+    0.0,
+    0.0569
+   ],
+   "ttc15_episodes": 74,
+   "ttc15_ep_missed": [
+    0.0135,
+    0.0,
+    0.045
+   ]
+  }
+ },
+ "rows": [
+  {
+   "track": 10,
+   "len": 2543,
+   "online": {
+    "rate_dev": 0.004080330330330335,
+    "max_up": 0.3908514707533908,
+    "mean_up": 0.037099097232750476,
+    "rate": 0.09971236816874401,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0107957957957958,
+    "max_up": 0.07587643010620182,
+    "mean_up": 0.014615144944055575,
+    "rate": 0.13135186960690318,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 28,
+   "len": 2622,
+   "online": {
+    "rate_dev": 0.0027469725940089213,
+    "max_up": 0.26370379849322345,
+    "mean_up": 0.02202595521665245,
+    "rate": 0.09982174688057041,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.020812619502868064,
+    "max_up": 0.06754291629458609,
+    "mean_up": 0.016684917109296097,
+    "rate": 0.10784313725490197,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 111,
+   "len": 3090,
+   "online": {
+    "rate_dev": 0.0023309788092835534,
+    "max_up": 0.23677517985548074,
+    "mean_up": 0.01440564296974303,
+    "rate": 0.09559748427672957,
+    "steps": 1,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.004032963336696942,
+    "max_up": 0.08948874968143333,
+    "mean_up": 0.017299595682397088,
+    "rate": 0.09056603773584905,
+    "steps": 1,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 174,
+   "len": 2898,
+   "online": {
+    "rate_dev": 0.0038610763454317914,
+    "max_up": 0.27237530923786046,
+    "mean_up": 0.02275603763050147,
+    "rate": 0.09799713876967096,
+    "steps": 10,
+    "step_missed": 5,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.009188569044639132,
+    "max_up": 0.12128444623048451,
+    "mean_up": 0.020591548948294878,
+    "rate": 0.10586552217453506,
+    "steps": 10,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 191,
+   "len": 2840,
+   "online": {
+    "rate_dev": 0.0018173639226270835,
+    "max_up": 0.1584748936160963,
+    "mean_up": 0.01247794441093421,
+    "rate": 0.09850746268656717,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0028362573099415225,
+    "max_up": 0.08555815322949673,
+    "mean_up": 0.01674793103690701,
+    "rate": 0.09925373134328358,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 222,
+   "len": 2551,
+   "online": {
+    "rate_dev": 0.003709439528023601,
+    "max_up": 0.3830432636961543,
+    "mean_up": 0.033298527108727896,
+    "rate": 0.09419600380589914,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.015818584070796463,
+    "max_up": 0.03492697454587079,
+    "mean_up": 0.00782990620382253,
+    "rate": 0.12749762131303521,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 229,
+   "len": 2716,
+   "online": {
+    "rate_dev": 0.003654781199351706,
+    "max_up": 0.3089138949703398,
+    "mean_up": 0.03426551434687476,
+    "rate": 0.0962171052631579,
+    "steps": 15,
+    "step_missed": 7,
+    "episodes": 3,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.008246893571042677,
+    "max_up": 0.1132708809490433,
+    "mean_up": 0.03674040600258566,
+    "rate": 0.10115131578947369,
+    "steps": 15,
+    "step_missed": 5,
+    "episodes": 3,
+    "ep_missed": 1
+   }
+  },
+  {
+   "track": 236,
+   "len": 3255,
+   "online": {
+    "rate_dev": 0.003284313725490198,
+    "max_up": 0.18942924830690294,
+    "mean_up": 0.010016253873647454,
+    "rate": 0.0962962962962963,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0252580738177624,
+    "max_up": 0.0879388223281316,
+    "mean_up": 0.007222552407854284,
+    "rate": 0.11054131054131054,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 268,
+   "len": 2761,
+   "online": {
+    "rate_dev": 0.002555387713997986,
+    "max_up": 0.16926148978931688,
+    "mean_up": 0.012795896641359104,
+    "rate": 0.0999206978588422,
+    "steps": 2,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.005448136958710975,
+    "max_up": 0.09393001969632292,
+    "mean_up": 0.013087970998265896,
+    "rate": 0.10229976209357652,
+    "steps": 2,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 302,
+   "len": 2574,
+   "online": {
+    "rate_dev": 0.002564912280701753,
+    "max_up": 0.16555348700125694,
+    "mean_up": 0.009716266568577858,
+    "rate": 0.1005586592178771,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0034035087719298225,
+    "max_up": 0.08391839105229382,
+    "mean_up": 0.011128289756176876,
+    "rate": 0.09962756052141528,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 382,
+   "len": 2545,
+   "online": {
+    "rate_dev": 0.002761584454409566,
+    "max_up": 0.2948661496470073,
+    "mean_up": 0.028150108205416084,
+    "rate": 0.10143540669856459,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.024779521674140506,
+    "max_up": 0.07102090891520557,
+    "mean_up": 0.01363818342913567,
+    "rate": 0.11291866028708133,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 402,
+   "len": 3507,
+   "online": {
+    "rate_dev": 0.004015151515151517,
+    "max_up": 0.3798565828417883,
+    "mean_up": 0.029680006690321253,
+    "rate": 0.09865470852017937,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.009214015151515152,
+    "max_up": 0.13745667773070497,
+    "mean_up": 0.030716122971670656,
+    "rate": 0.10762331838565023,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 410,
+   "len": 2520,
+   "online": {
+    "rate_dev": 0.004196357878068097,
+    "max_up": 0.38958082996628324,
+    "mean_up": 0.03860807619551008,
+    "rate": 0.09803921568627451,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.015407759303246242,
+    "max_up": 0.049655303352428515,
+    "mean_up": 0.014387104522836472,
+    "rate": 0.10980392156862745,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 479,
+   "len": 2636,
+   "online": {
+    "rate_dev": 0.0031719428926132885,
+    "max_up": 0.3774432346430115,
+    "mean_up": 0.03122442773958927,
+    "rate": 0.09859154929577464,
+    "steps": 6,
+    "step_missed": 2,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.026809435133457477,
+    "max_up": 0.06370541004527819,
+    "mean_up": 0.012719963303188397,
+    "rate": 0.12411971830985916,
+    "steps": 6,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 540,
+   "len": 3144,
+   "online": {
+    "rate_dev": 0.002443381180223286,
+    "max_up": 0.4098783500462027,
+    "mean_up": 0.023088183332827524,
+    "rate": 0.09793187347931874,
+    "steps": 5,
+    "step_missed": 1,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.013998405103668262,
+    "max_up": 0.04087771281940916,
+    "mean_up": 0.011960698367152075,
+    "rate": 0.10644768856447688,
+    "steps": 5,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 599,
+   "len": 2939,
+   "online": {
+    "rate_dev": 0.0034682539682539698,
+    "max_up": 0.1367328611628741,
+    "mean_up": 0.010853524097904977,
+    "rate": 0.09520500347463516,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.020023809523809524,
+    "max_up": 0.061652855986677246,
+    "mean_up": 0.00757228492569771,
+    "rate": 0.103544127866574,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 696,
+   "len": 3378,
+   "online": {
+    "rate_dev": 0.0034180349231170224,
+    "max_up": 0.2179867199881642,
+    "mean_up": 0.017585131658874802,
+    "rate": 0.09637912673056442,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0068764659890539525,
+    "max_up": 0.11135958364815901,
+    "mean_up": 0.016346180541003334,
+    "rate": 0.11927582534611289,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 740,
+   "len": 2679,
+   "online": {
+    "rate_dev": 0.0025229885057471263,
+    "max_up": 0.1912005535069568,
+    "mean_up": 0.0159972357277494,
+    "rate": 0.09923664122137404,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.006942528735632182,
+    "max_up": 0.08563702171248155,
+    "mean_up": 0.018280589431910105,
+    "rate": 0.09923664122137404,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 780,
+   "len": 2827,
+   "online": {
+    "rate_dev": 0.002303113553113556,
+    "max_up": 0.20903519782669894,
+    "mean_up": 0.014154815546188025,
+    "rate": 0.0987189148455162,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.002582417582417586,
+    "max_up": 0.11341356502330402,
+    "mean_up": 0.014958185446148008,
+    "rate": 0.09721175584024115,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 814,
+   "len": 2536,
+   "online": {
+    "rate_dev": 0.0034935163996948925,
+    "max_up": 0.41997114275224456,
+    "mean_up": 0.03468043928101577,
+    "rate": 0.09749034749034749,
+    "steps": 7,
+    "step_missed": 3,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.013524027459954234,
+    "max_up": 0.029133434358956656,
+    "mean_up": 0.010286903266016814,
+    "rate": 0.11969111969111969,
+    "steps": 7,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 823,
+   "len": 2845,
+   "online": {
+    "rate_dev": 0.003715370866845399,
+    "max_up": 0.27724544224679976,
+    "mean_up": 0.019990500219841847,
+    "rate": 0.09888475836431226,
+    "steps": 8,
+    "step_missed": 4,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.01437444146559428,
+    "max_up": 0.07547039863934313,
+    "mean_up": 0.009728095228767712,
+    "rate": 0.1546468401486989,
+    "steps": 8,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 833,
+   "len": 2867,
+   "online": {
+    "rate_dev": 0.003190104166666669,
+    "max_up": 0.23171182156549808,
+    "mean_up": 0.02428846785802896,
+    "rate": 0.09875640087783467,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.007345920138888891,
+    "max_up": 0.06206176005510777,
+    "mean_up": 0.01827405818613986,
+    "rate": 0.10607168983174835,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 841,
+   "len": 3865,
+   "online": {
+    "rate_dev": 0.004047753869384675,
+    "max_up": 0.2775167142401099,
+    "mean_up": 0.02201375505879747,
+    "rate": 0.09809725158562368,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.043746696866742166,
+    "max_up": 0.05822919774746882,
+    "mean_up": 0.013691775879938285,
+    "rate": 0.13107822410147993,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 883,
+   "len": 2871,
+   "online": {
+    "rate_dev": 0.002871329879101902,
+    "max_up": 0.4110103438152045,
+    "mean_up": 0.025536937587814418,
+    "rate": 0.099927060539752,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.020293609671848015,
+    "max_up": 0.06988344203074348,
+    "mean_up": 0.014850768809080555,
+    "rate": 0.11232676878191102,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 931,
+   "len": 2704,
+   "online": {
+    "rate_dev": 0.0026528925619834745,
+    "max_up": 0.22276947151893117,
+    "mean_up": 0.016142875718428196,
+    "rate": 0.09551495016611296,
+    "steps": 15,
+    "step_missed": 0,
+    "episodes": 3,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0028209366391184617,
+    "max_up": 0.19222383892530087,
+    "mean_up": 0.018234829835076086,
+    "rate": 0.09551495016611296,
+    "steps": 15,
+    "step_missed": 0,
+    "episodes": 3,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 991,
+   "len": 2649,
+   "online": {
+    "rate_dev": 0.003239393939393938,
+    "max_up": 0.2135160781304491,
+    "mean_up": 0.01947425715335213,
+    "rate": 0.10008703220191471,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.008036363636363633,
+    "max_up": 0.10188326299324973,
+    "mean_up": 0.02004465312048449,
+    "rate": 0.10530896431679722,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1019,
+   "len": 3212,
+   "online": {
+    "rate_dev": 0.003364779874213838,
+    "max_up": 0.3024491233862215,
+    "mean_up": 0.023370054018401868,
+    "rate": 0.09929906542056074,
+    "steps": 7,
+    "step_missed": 3,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.030266546870320456,
+    "max_up": 0.04980932429720519,
+    "mean_up": 0.007209209162421127,
+    "rate": 0.12558411214953272,
+    "steps": 7,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1124,
+   "len": 2540,
+   "online": {
+    "rate_dev": 0.0020786092214663686,
+    "max_up": 0.2259510110756689,
+    "mean_up": 0.017155378497560752,
+    "rate": 0.09519230769230769,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.005959939531368107,
+    "max_up": 0.07454751056610215,
+    "mean_up": 0.02415456665451363,
+    "rate": 0.08557692307692308,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1231,
+   "len": 2543,
+   "online": {
+    "rate_dev": 0.00421921921921922,
+    "max_up": 0.43464289207675527,
+    "mean_up": 0.03748014294601873,
+    "rate": 0.10067114093959731,
+    "steps": 5,
+    "step_missed": 1,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.028310810810810806,
+    "max_up": 0.059788995240202814,
+    "mean_up": 0.0221174499067375,
+    "rate": 0.14669223394055608,
+    "steps": 5,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1293,
+   "len": 2556,
+   "online": {
+    "rate_dev": 0.0030634573304157537,
+    "max_up": 0.28456825398340896,
+    "mean_up": 0.032002179003628506,
+    "rate": 0.10321969696969698,
+    "steps": 53,
+    "step_missed": 41,
+    "episodes": 5,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.044084609773887666,
+    "max_up": 0.011831600411337462,
+    "mean_up": 0.0007252693377595673,
+    "rate": 0.14015151515151514,
+    "steps": 53,
+    "step_missed": 0,
+    "episodes": 5,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1317,
+   "len": 2709,
+   "online": {
+    "rate_dev": 0.003131147540983608,
+    "max_up": 0.15634151405088637,
+    "mean_up": 0.010591798773803349,
+    "rate": 0.0967741935483871,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.020215846994535516,
+    "max_up": 0.10412249355429981,
+    "mean_up": 0.012020334880501174,
+    "rate": 0.1141439205955335,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1318,
+   "len": 2681,
+   "online": {
+    "rate_dev": 0.005922107674684996,
+    "max_up": 0.30283254699794804,
+    "mean_up": 0.0321532171504482,
+    "rate": 0.10076206604572396,
+    "steps": 14,
+    "step_missed": 4,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.058957617411225655,
+    "max_up": 0.09774868344311471,
+    "mean_up": 0.019486902712472092,
+    "rate": 0.18035563082133785,
+    "steps": 14,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1347,
+   "len": 3036,
+   "online": {
+    "rate_dev": 0.002506225542511564,
+    "max_up": 0.16619498484394052,
+    "mean_up": 0.014939731392238908,
+    "rate": 0.099609375,
+    "steps": 1,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.010266808964781214,
+    "max_up": 0.04733042831872597,
+    "mean_up": 0.01430479761952435,
+    "rate": 0.11328125,
+    "steps": 1,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1579,
+   "len": 2741,
+   "online": {
+    "rate_dev": 0.003912253374870198,
+    "max_up": 0.2094032648135848,
+    "mean_up": 0.019038950059542408,
+    "rate": 0.09750201450443191,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.008429387331256488,
+    "max_up": 0.1176766740808941,
+    "mean_up": 0.017783717121198507,
+    "rate": 0.10233682514101532,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1588,
+   "len": 2658,
+   "online": {
+    "rate_dev": 0.0022331544424567685,
+    "max_up": 0.17297704245612622,
+    "mean_up": 0.012330499229981107,
+    "rate": 0.09844559585492228,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.002996422182468695,
+    "max_up": 0.08362174318175325,
+    "mean_up": 0.015597730036941997,
+    "rate": 0.09585492227979274,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1594,
+   "len": 2756,
+   "online": {
+    "rate_dev": 0.003280060882800609,
+    "max_up": 0.1881646540436796,
+    "mean_up": 0.012045491485612911,
+    "rate": 0.09872611464968153,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.014961948249619482,
+    "max_up": 0.1692864027542989,
+    "mean_up": 0.009251179816219257,
+    "rate": 0.11146496815286625,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1608,
+   "len": 2547,
+   "online": {
+    "rate_dev": 0.0036197916666666666,
+    "max_up": 0.3282374584060466,
+    "mean_up": 0.024886036958118737,
+    "rate": 0.09742120343839542,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.011644345238095235,
+    "max_up": 0.0687689890187721,
+    "mean_up": 0.023119411749290223,
+    "rate": 0.11174785100286533,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1614,
+   "len": 2570,
+   "online": {
+    "rate_dev": 0.0017091295116772845,
+    "max_up": 0.22332935836686424,
+    "mean_up": 0.013234561725730159,
+    "rate": 0.09813084112149532,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0019462137296532224,
+    "max_up": 0.19590753326342308,
+    "mean_up": 0.016691498772029998,
+    "rate": 0.09813084112149532,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1618,
+   "len": 2690,
+   "online": {
+    "rate_dev": 0.002405527354765938,
+    "max_up": 0.14662707978113948,
+    "mean_up": 0.013740320472449127,
+    "rate": 0.09915966386554621,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0023970671178793054,
+    "max_up": 0.1445218927689273,
+    "mean_up": 0.013295917401608702,
+    "rate": 0.09915966386554621,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1665,
+   "len": 2848,
+   "online": {
+    "rate_dev": 0.0027236315086782417,
+    "max_up": 0.2705680417261868,
+    "mean_up": 0.014848288793516427,
+    "rate": 0.09940652818991098,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.005465064530485094,
+    "max_up": 0.09352765727298118,
+    "mean_up": 0.020476509253398,
+    "rate": 0.10089020771513353,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1736,
+   "len": 2694,
+   "online": {
+    "rate_dev": 0.0026218487394958,
+    "max_up": 0.2725441221692448,
+    "mean_up": 0.027119669506671006,
+    "rate": 0.09798994974874371,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0060252100840336165,
+    "max_up": 0.10319919818486334,
+    "mean_up": 0.03397788524980111,
+    "rate": 0.09966499162479062,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1742,
+   "len": 2590,
+   "online": {
+    "rate_dev": 0.003940936863543794,
+    "max_up": 0.19964745167373033,
+    "mean_up": 0.020114847085261817,
+    "rate": 0.0981651376146789,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.010909708078750854,
+    "max_up": 0.058106518752155445,
+    "mean_up": 0.01663040951871819,
+    "rate": 0.10275229357798166,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1770,
+   "len": 3034,
+   "online": {
+    "rate_dev": 0.004511586452762926,
+    "max_up": 0.3515822816595363,
+    "mean_up": 0.020993294192522178,
+    "rate": 0.10039113428943937,
+    "steps": 9,
+    "step_missed": 2,
+    "episodes": 3,
+    "ep_missed": 1
+   },
+   "clamp": {
+    "rate_dev": 0.06967557932263815,
+    "max_up": 0.06865341619277948,
+    "mean_up": 0.0031009905984134773,
+    "rate": 0.16492829204693613,
+    "steps": 9,
+    "step_missed": 0,
+    "episodes": 3,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1790,
+   "len": 2971,
+   "online": {
+    "rate_dev": 0.00231651376146789,
+    "max_up": 0.16236907740637213,
+    "mean_up": 0.010727866912202979,
+    "rate": 0.09857239972807613,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.020550458715596322,
+    "max_up": 0.07778051276795278,
+    "mean_up": 0.011248024111832393,
+    "rate": 0.11964649898028552,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1810,
+   "len": 2943,
+   "online": {
+    "rate_dev": 0.0024466824644549766,
+    "max_up": 0.1858917186098209,
+    "mean_up": 0.01579041339717267,
+    "rate": 0.0997920997920998,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.005442338072669825,
+    "max_up": 0.15990261504351938,
+    "mean_up": 0.016529830737661632,
+    "rate": 0.10395010395010396,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1910,
+   "len": 3162,
+   "online": {
+    "rate_dev": 0.003403888366259018,
+    "max_up": 0.3096091045696268,
+    "mean_up": 0.018624133003672032,
+    "rate": 0.09987966305655836,
+    "steps": 6,
+    "step_missed": 2,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.03348855440576983,
+    "max_up": 0.0767166235415983,
+    "mean_up": 0.0044868739826968715,
+    "rate": 0.12575210589651023,
+    "steps": 6,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1916,
+   "len": 3486,
+   "online": {
+    "rate_dev": 0.0032900745013217996,
+    "max_up": 0.33881020857947064,
+    "mean_up": 0.02790845269551826,
+    "rate": 0.10171198388721048,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.006892573900504688,
+    "max_up": 0.21134173172430415,
+    "mean_up": 0.03094405360173384,
+    "rate": 0.10876132930513595,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1925,
+   "len": 2553,
+   "online": {
+    "rate_dev": 0.002463289280469898,
+    "max_up": 0.18403255472576485,
+    "mean_up": 0.019032523825704507,
+    "rate": 0.0949667616334283,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.004331864904552126,
+    "max_up": 0.09047700600483954,
+    "mean_up": 0.028542595169556637,
+    "rate": 0.09591642924976258,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1943,
+   "len": 2531,
+   "online": {
+    "rate_dev": 0.0038657407407407447,
+    "max_up": 0.29217504417687085,
+    "mean_up": 0.01815208024644591,
+    "rate": 0.0979631425800194,
+    "steps": 3,
+    "step_missed": 3,
+    "episodes": 1,
+    "ep_missed": 1
+   },
+   "clamp": {
+    "rate_dev": 0.013595679012345674,
+    "max_up": 0.03853011314222443,
+    "mean_up": 0.005014583864421071,
+    "rate": 0.11930164888457807,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1958,
+   "len": 2639,
+   "online": {
+    "rate_dev": 0.00322530864197531,
+    "max_up": 0.2519358535679913,
+    "mean_up": 0.01809891384071396,
+    "rate": 0.10008779631255488,
+    "steps": 9,
+    "step_missed": 6,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.05801543209876542,
+    "max_up": 0.030947151827140473,
+    "mean_up": 0.000999585216444037,
+    "rate": 0.14925373134328357,
+    "steps": 9,
+    "step_missed": 1,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1982,
+   "len": 2520,
+   "online": {
+    "rate_dev": 0.004010292953285831,
+    "max_up": 0.45227006717982343,
+    "mean_up": 0.035949271413718606,
+    "rate": 0.09901960784313725,
+    "steps": 5,
+    "step_missed": 1,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.016678543151227236,
+    "max_up": 0.06304378105711711,
+    "mean_up": 0.010357182543249329,
+    "rate": 0.12549019607843137,
+    "steps": 5,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 1986,
+   "len": 2640,
+   "online": {
+    "rate_dev": 0.0033703019100431325,
+    "max_up": 0.2637037044154121,
+    "mean_up": 0.01580529222967385,
+    "rate": 0.10350877192982456,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.039842883548983354,
+    "max_up": 0.06657466171893311,
+    "mean_up": 0.0031263094317040946,
+    "rate": 0.14649122807017545,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2001,
+   "len": 2759,
+   "online": {
+    "rate_dev": 0.005363636363636365,
+    "max_up": 0.2661855200258909,
+    "mean_up": 0.015016463942566846,
+    "rate": 0.0976965845909452,
+    "steps": 7,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.01934090909090909,
+    "max_up": 0.04499827865153461,
+    "mean_up": 0.00400461006386117,
+    "rate": 0.15250198570293885,
+    "steps": 7,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2090,
+   "len": 3908,
+   "online": {
+    "rate_dev": 0.0032375161230882637,
+    "max_up": 0.3200978323094658,
+    "mean_up": 0.020402311851865185,
+    "rate": 0.09842192691029901,
+    "steps": 9,
+    "step_missed": 5,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.023804127510595168,
+    "max_up": 0.055242927372778194,
+    "mean_up": 0.013228876233956655,
+    "rate": 0.11503322259136213,
+    "steps": 9,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2138,
+   "len": 2829,
+   "online": {
+    "rate_dev": 0.002901826484018267,
+    "max_up": 0.19143890459707313,
+    "mean_up": 0.015671453227600843,
+    "rate": 0.09857035364936043,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.007207762557077626,
+    "max_up": 0.09167749738857489,
+    "mean_up": 0.018345593911804244,
+    "rate": 0.09932279909706546,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2154,
+   "len": 2531,
+   "online": {
+    "rate_dev": 0.002851080246913585,
+    "max_up": 0.15226192438491215,
+    "mean_up": 0.01347229274435297,
+    "rate": 0.09699321047526673,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.00719907407407408,
+    "max_up": 0.05626841183132286,
+    "mean_up": 0.019654818947966442,
+    "rate": 0.09699321047526673,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2183,
+   "len": 2652,
+   "online": {
+    "rate_dev": 0.002694394213381556,
+    "max_up": 0.28301882316300553,
+    "mean_up": 0.02179473602888332,
+    "rate": 0.10069444444444445,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.011636528028933087,
+    "max_up": 0.08228214507243276,
+    "mean_up": 0.01689258913384663,
+    "rate": 0.11197916666666667,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2207,
+   "len": 2547,
+   "online": {
+    "rate_dev": 0.003545386904761906,
+    "max_up": 0.10830816239762203,
+    "mean_up": 0.009255114838908831,
+    "rate": 0.09933142311365807,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.010677083333333328,
+    "max_up": 0.021663875872300398,
+    "mean_up": 0.006579496851153234,
+    "rate": 0.10983763132760267,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2228,
+   "len": 2845,
+   "online": {
+    "rate_dev": 0.0030495978552278827,
+    "max_up": 0.20628407781128433,
+    "mean_up": 0.013535512298025954,
+    "rate": 0.10260223048327137,
+    "steps": 21,
+    "step_missed": 13,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.007716711349419124,
+    "max_up": 0.12428251502153276,
+    "mean_up": 0.011365399451075023,
+    "rate": 0.11970260223048328,
+    "steps": 21,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2294,
+   "len": 3012,
+   "online": {
+    "rate_dev": 0.003377144943410007,
+    "max_up": 0.08941386673664503,
+    "mean_up": 0.007694605641024285,
+    "rate": 0.09986772486772487,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.010399780941949622,
+    "max_up": 0.05820043441017597,
+    "mean_up": 0.010853671085332087,
+    "rate": 0.0958994708994709,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2370,
+   "len": 3758,
+   "online": {
+    "rate_dev": 0.0031866586296966063,
+    "max_up": 0.3170081259528119,
+    "mean_up": 0.024479715138500335,
+    "rate": 0.09654561558901682,
+    "steps": 2,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.02401948965240104,
+    "max_up": 0.06657121476374772,
+    "mean_up": 0.010291316692429168,
+    "rate": 0.11691762621789194,
+    "steps": 2,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2383,
+   "len": 2591,
+   "online": {
+    "rate_dev": 0.0033062330623306246,
+    "max_up": 0.16963338952516993,
+    "mean_up": 0.016919755022521663,
+    "rate": 0.09807516040329972,
+    "steps": 12,
+    "step_missed": 8,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.011422764227642277,
+    "max_up": 0.1066337596705651,
+    "mean_up": 0.02342430050752651,
+    "rate": 0.11915673693858846,
+    "steps": 12,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2401,
+   "len": 2669,
+   "online": {
+    "rate_dev": 0.0027748538011695945,
+    "max_up": 0.2781639316969939,
+    "mean_up": 0.030977359691603052,
+    "rate": 0.09923011120615911,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0035760233918128684,
+    "max_up": 0.16431121763771073,
+    "mean_up": 0.03815229386192011,
+    "rate": 0.09923011120615911,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2421,
+   "len": 3508,
+   "online": {
+    "rate_dev": 0.003341613437426071,
+    "max_up": 0.3140276571350017,
+    "mean_up": 0.024381402760104715,
+    "rate": 0.099601593625498,
+    "steps": 5,
+    "step_missed": 1,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.009567068843151172,
+    "max_up": 0.07980418193873479,
+    "mean_up": 0.014870000811903688,
+    "rate": 0.1344621513944223,
+    "steps": 5,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2544,
+   "len": 3003,
+   "online": {
+    "rate_dev": 0.003021755162241889,
+    "max_up": 0.29308366038337585,
+    "mean_up": 0.018616482957590868,
+    "rate": 0.09447771124417831,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.003965707964601771,
+    "max_up": 0.1916233267103008,
+    "mean_up": 0.019820080870148003,
+    "rate": 0.09115103127079174,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2568,
+   "len": 2613,
+   "online": {
+    "rate_dev": 0.0014753566796368363,
+    "max_up": 0.1253368750455754,
+    "mean_up": 0.00829944473205942,
+    "rate": 0.09883198562443846,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0014721141374837887,
+    "max_up": 0.07054097043023017,
+    "mean_up": 0.013929699696861832,
+    "rate": 0.09523809523809523,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2621,
+   "len": 2868,
+   "online": {
+    "rate_dev": 0.0035002167316861756,
+    "max_up": 0.2589789673061857,
+    "mean_up": 0.016103731075135116,
+    "rate": 0.09722222222222222,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.011272214997832685,
+    "max_up": 0.056350736287789305,
+    "mean_up": 0.0044052842836213545,
+    "rate": 0.13742690058479531,
+    "steps": 4,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2690,
+   "len": 3403,
+   "online": {
+    "rate_dev": 0.0026929959100204523,
+    "max_up": 0.38844426528046455,
+    "mean_up": 0.020463531651655504,
+    "rate": 0.09563846558066211,
+    "steps": 6,
+    "step_missed": 4,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.026708844580777096,
+    "max_up": 0.04669861369692413,
+    "mean_up": 0.006955283590657401,
+    "rate": 0.13347346295323173,
+    "steps": 6,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2727,
+   "len": 2556,
+   "online": {
+    "rate_dev": 0.003052516411378557,
+    "max_up": 0.17100780559909395,
+    "mean_up": 0.020415224831848093,
+    "rate": 0.09848484848484848,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0660539752005835,
+    "max_up": 0.008667531608859858,
+    "mean_up": 0.0003575027402917586,
+    "rate": 0.13825757575757575,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2757,
+   "len": 2615,
+   "online": {
+    "rate_dev": 0.002554909560723516,
+    "max_up": 0.165161631931245,
+    "mean_up": 0.01744663366951129,
+    "rate": 0.09955156950672646,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.00866925064599483,
+    "max_up": 0.03284414484656406,
+    "mean_up": 0.014728179272376199,
+    "rate": 0.10224215246636771,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2864,
+   "len": 2551,
+   "online": {
+    "rate_dev": 0.003075221238938057,
+    "max_up": 0.41359688752973106,
+    "mean_up": 0.02722088448462721,
+    "rate": 0.09990485252140818,
+    "steps": 6,
+    "step_missed": 2,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.05278392330383481,
+    "max_up": 0.04452687970842906,
+    "mean_up": 0.0011518844247265466,
+    "rate": 0.13891531874405327,
+    "steps": 6,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2866,
+   "len": 2618,
+   "online": {
+    "rate_dev": 0.003269107257546564,
+    "max_up": 0.13851862925553332,
+    "mean_up": 0.009726229888987012,
+    "rate": 0.09570661896243292,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.00724470134874759,
+    "max_up": 0.09108625797150921,
+    "mean_up": 0.015481326320122793,
+    "rate": 0.08765652951699464,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2922,
+   "len": 3611,
+   "online": {
+    "rate_dev": 0.003413800705467374,
+    "max_up": 0.2931301068507929,
+    "mean_up": 0.02207373289914354,
+    "rate": 0.09568924680246328,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.027406305114638447,
+    "max_up": 0.053290863436056046,
+    "mean_up": 0.01174404372098709,
+    "rate": 0.11274277593557555,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2941,
+   "len": 3003,
+   "online": {
+    "rate_dev": 0.003506637168141594,
+    "max_up": 0.42398048417936784,
+    "mean_up": 0.03254189919974251,
+    "rate": 0.09580838323353294,
+    "steps": 9,
+    "step_missed": 5,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.008917772861356931,
+    "max_up": 0.07057157662749974,
+    "mean_up": 0.0225305810574186,
+    "rate": 0.10578842315369262,
+    "steps": 9,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2952,
+   "len": 2880,
+   "online": {
+    "rate_dev": 0.002654716175842938,
+    "max_up": 0.1696551131087361,
+    "mean_up": 0.011297029156575815,
+    "rate": 0.10144927536231885,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.013440034144259493,
+    "max_up": 0.08767146375743479,
+    "mean_up": 0.010560264667680298,
+    "rate": 0.10652173913043478,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 2964,
+   "len": 2552,
+   "online": {
+    "rate_dev": 0.003322295805739518,
+    "max_up": 0.34761130142584457,
+    "mean_up": 0.02848058945060885,
+    "rate": 0.09885931558935361,
+    "steps": 2,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.012384105960264898,
+    "max_up": 0.051485000194245345,
+    "mean_up": 0.008328665567997605,
+    "rate": 0.11596958174904944,
+    "steps": 2,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3009,
+   "len": 2888,
+   "online": {
+    "rate_dev": 0.003305872412336294,
+    "max_up": 0.2532710021678855,
+    "mean_up": 0.02337345899876234,
+    "rate": 0.0994236311239193,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.030230249260667502,
+    "max_up": 0.10031120664559257,
+    "mean_up": 0.03200832783327418,
+    "rate": 0.11311239193083573,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3028,
+   "len": 2615,
+   "online": {
+    "rate_dev": 0.004651162790697679,
+    "max_up": 0.10812112060150358,
+    "mean_up": 0.00576097592643443,
+    "rate": 0.09865470852017937,
+    "steps": 12,
+    "step_missed": 7,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.027487080103359172,
+    "max_up": 0.0,
+    "mean_up": 0.0,
+    "rate": 0.16502242152466368,
+    "steps": 12,
+    "step_missed": 4,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3314,
+   "len": 3410,
+   "online": {
+    "rate_dev": 0.0034070683956267493,
+    "max_up": 0.39752423230185324,
+    "mean_up": 0.028196857645581982,
+    "rate": 0.09842931937172775,
+    "steps": 8,
+    "step_missed": 4,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.04339308415967454,
+    "max_up": 0.026196619901247165,
+    "mean_up": 0.004297514435381688,
+    "rate": 0.13979057591623037,
+    "steps": 8,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3331,
+   "len": 2505,
+   "online": {
+    "rate_dev": 0.0021880131362890004,
+    "max_up": 0.22160134585581154,
+    "mean_up": 0.016471490840893,
+    "rate": 0.09950248756218906,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.004429392446633824,
+    "max_up": 0.08077964020377709,
+    "mean_up": 0.024802297411466976,
+    "rate": 0.10149253731343283,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3360,
+   "len": 2660,
+   "online": {
+    "rate_dev": 0.002599524658348187,
+    "max_up": 0.1170853926854028,
+    "mean_up": 0.011504161840805428,
+    "rate": 0.09568965517241379,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.003784907902554961,
+    "max_up": 0.1345533535863352,
+    "mean_up": 0.014528655886396106,
+    "rate": 0.09655172413793103,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3414,
+   "len": 2834,
+   "online": {
+    "rate_dev": 0.001947845804988664,
+    "max_up": 0.1770454757840026,
+    "mean_up": 0.01220684282905274,
+    "rate": 0.09745127436281859,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0023786848072562383,
+    "max_up": 0.11075043824002218,
+    "mean_up": 0.015544538134845541,
+    "rate": 0.0944527736131934,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3419,
+   "len": 3198,
+   "online": {
+    "rate_dev": 0.005327570518653322,
+    "max_up": 0.2695335570795511,
+    "mean_up": 0.011010328909438942,
+    "rate": 0.0977620730270907,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.006075219896875948,
+    "max_up": 0.19972493700295008,
+    "mean_up": 0.01691391890453868,
+    "rate": 0.0977620730270907,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3420,
+   "len": 2935,
+   "online": {
+    "rate_dev": 0.0018440988835725675,
+    "max_up": 0.19819590840621276,
+    "mean_up": 0.015112863846872123,
+    "rate": 0.09965156794425087,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.006664673046251992,
+    "max_up": 0.09015742577190866,
+    "mean_up": 0.02477930391648455,
+    "rate": 0.10871080139372823,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3443,
+   "len": 2532,
+   "online": {
+    "rate_dev": 0.003953040800615858,
+    "max_up": 0.18472426827717603,
+    "mean_up": 0.02748472402911772,
+    "rate": 0.0998062015503876,
+    "steps": 12,
+    "step_missed": 7,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.015192455735180911,
+    "max_up": 0.05901135866052115,
+    "mean_up": 0.021510722854159933,
+    "rate": 0.10852713178294573,
+    "steps": 12,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3457,
+   "len": 2611,
+   "online": {
+    "rate_dev": 0.006695963541666669,
+    "max_up": 0.3340101531795006,
+    "mean_up": 0.02430183123635616,
+    "rate": 0.09810981098109811,
+    "steps": 11,
+    "step_missed": 2,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.060924479166666656,
+    "max_up": 0.133604972580747,
+    "mean_up": 0.021136438397064482,
+    "rate": 0.20432043204320433,
+    "steps": 11,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3500,
+   "len": 2524,
+   "online": {
+    "rate_dev": 0.005662745098039221,
+    "max_up": 0.22744418962487012,
+    "mean_up": 0.02478426876380826,
+    "rate": 0.09765625,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.012972549019607843,
+    "max_up": 0.06378456752524198,
+    "mean_up": 0.01561723051018667,
+    "rate": 0.1044921875,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3542,
+   "len": 2543,
+   "online": {
+    "rate_dev": 0.0024061561561561583,
+    "max_up": 0.22941614803516747,
+    "mean_up": 0.019869680434652415,
+    "rate": 0.09587727708533078,
+    "steps": 17,
+    "step_missed": 16,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.007165915915915918,
+    "max_up": 0.0813814799332428,
+    "mean_up": 0.026932681726822404,
+    "rate": 0.10930009587727708,
+    "steps": 17,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3566,
+   "len": 3078,
+   "online": {
+    "rate_dev": 0.002717058222676203,
+    "max_up": 0.24949728750036126,
+    "mean_up": 0.014431643162553099,
+    "rate": 0.09949302915082382,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.012252298263534219,
+    "max_up": 0.06737762379226347,
+    "mean_up": 0.00463485461443647,
+    "rate": 0.1185044359949303,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3572,
+   "len": 2602,
+   "online": {
+    "rate_dev": 0.001557322730284958,
+    "max_up": 0.14628042183952783,
+    "mean_up": 0.011637346270047389,
+    "rate": 0.0998185117967332,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0020907886017229958,
+    "max_up": 0.07970976259873996,
+    "mean_up": 0.012976182073867153,
+    "rate": 0.10254083484573502,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3659,
+   "len": 2916,
+   "online": {
+    "rate_dev": 0.002470420236638108,
+    "max_up": 0.1603052167661756,
+    "mean_up": 0.0123300737133888,
+    "rate": 0.10098870056497175,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.003274173806609547,
+    "max_up": 0.12896670716545172,
+    "mean_up": 0.014117744600005613,
+    "rate": 0.10098870056497175,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3713,
+   "len": 2504,
+   "online": {
+    "rate_dev": 0.0030370370370370364,
+    "max_up": 0.2366567097145284,
+    "mean_up": 0.024217916362473307,
+    "rate": 0.09661354581673307,
+    "steps": 9,
+    "step_missed": 5,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.03488477366255144,
+    "max_up": 0.09156642890528194,
+    "mean_up": 0.014890652024314876,
+    "rate": 0.1205179282868526,
+    "steps": 9,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 3830,
+   "len": 2504,
+   "online": {
+    "rate_dev": 0.005526748971193418,
+    "max_up": 0.43998550932185915,
+    "mean_up": 0.04156988576115371,
+    "rate": 0.09661354581673307,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.019506172839506168,
+    "max_up": 0.05714230397719544,
+    "mean_up": 0.01820475476732009,
+    "rate": 0.1205179282868526,
+    "steps": 3,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4098,
+   "len": 2791,
+   "online": {
+    "rate_dev": 0.0035380539499036603,
+    "max_up": 0.22991409070138313,
+    "mean_up": 0.018928042721580107,
+    "rate": 0.09682416731216112,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.01585260115606936,
+    "max_up": 0.0898539959669068,
+    "mean_up": 0.016498076144470696,
+    "rate": 0.10302091402013942,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4138,
+   "len": 2630,
+   "online": {
+    "rate_dev": 0.0020244821092278717,
+    "max_up": 0.11549172506709204,
+    "mean_up": 0.010156801208112987,
+    "rate": 0.09469026548672567,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.003907721280602637,
+    "max_up": 0.0668016287212963,
+    "mean_up": 0.012553371532037904,
+    "rate": 0.09557522123893805,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4189,
+   "len": 3057,
+   "online": {
+    "rate_dev": 0.0021711899791231736,
+    "max_up": 0.17929909992300053,
+    "mean_up": 0.011323555043617596,
+    "rate": 0.1001926782273603,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.003928322894919972,
+    "max_up": 0.10796351511432772,
+    "mean_up": 0.01186197936687241,
+    "rate": 0.09826589595375723,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4241,
+   "len": 2876,
+   "online": {
+    "rate_dev": 0.0029150579150579166,
+    "max_up": 0.2146397576939476,
+    "mean_up": 0.011167213556639983,
+    "rate": 0.09956395348837209,
+    "steps": 20,
+    "step_missed": 12,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.012117117117117118,
+    "max_up": 0.07374875912648399,
+    "mean_up": 0.014633816851442692,
+    "rate": 0.11627906976744186,
+    "steps": 20,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4266,
+   "len": 3500,
+   "online": {
+    "rate_dev": 0.0026754699024506318,
+    "max_up": 0.20868636077682012,
+    "mean_up": 0.01465177693345112,
+    "rate": 0.096,
+    "steps": 1,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.016149179157744466,
+    "max_up": 0.07987355871225604,
+    "mean_up": 0.014763261784406024,
+    "rate": 0.1025,
+    "steps": 1,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4362,
+   "len": 3079,
+   "online": {
+    "rate_dev": 0.0026547619047619054,
+    "max_up": 0.23428944529266094,
+    "mean_up": 0.018061509026935336,
+    "rate": 0.09943001899936668,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.01569047619047619,
+    "max_up": 0.05726604326150464,
+    "mean_up": 0.016745833449993024,
+    "rate": 0.11336288790373654,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4446,
+   "len": 2540,
+   "online": {
+    "rate_dev": 0.0022826908541194284,
+    "max_up": 0.17369046961736662,
+    "mean_up": 0.011110622980508869,
+    "rate": 0.09711538461538462,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.002282690854119429,
+    "max_up": 0.14182127365571984,
+    "mean_up": 0.013542882542380622,
+    "rate": 0.09711538461538462,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4449,
+   "len": 2889,
+   "online": {
+    "rate_dev": 0.003999999999999999,
+    "max_up": 0.31082822849363445,
+    "mean_up": 0.01662217687563691,
+    "rate": 0.10223182145428365,
+    "steps": 8,
+    "step_missed": 1,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.04622362869198312,
+    "max_up": 0.044999999999936646,
+    "mean_up": 0.0017128483900935478,
+    "rate": 0.13822894168466524,
+    "steps": 8,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4549,
+   "len": 2573,
+   "online": {
+    "rate_dev": 0.005872011251758085,
+    "max_up": 0.12111721187344149,
+    "mean_up": 0.008377555196291214,
+    "rate": 0.09972041006523766,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.2537623066104079,
+    "max_up": 0.0140819851311631,
+    "mean_up": 0.0009255604777800403,
+    "rate": 0.2712022367194781,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4564,
+   "len": 2505,
+   "online": {
+    "rate_dev": 0.0037766830870279164,
+    "max_up": 0.4179183589763464,
+    "mean_up": 0.03900400952112198,
+    "rate": 0.09751243781094528,
+    "steps": 8,
+    "step_missed": 4,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.013784893267651891,
+    "max_up": 0.10557699825337835,
+    "mean_up": 0.03288828477787023,
+    "rate": 0.11243781094527364,
+    "steps": 8,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4565,
+   "len": 3479,
+   "online": {
+    "rate_dev": 0.003100241545893722,
+    "max_up": 0.23633398717301063,
+    "mean_up": 0.016570108925613922,
+    "rate": 0.09903991915108641,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.011608695652173913,
+    "max_up": 0.09758380924599142,
+    "mean_up": 0.020098727434794055,
+    "rate": 0.10510358767054068,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4577,
+   "len": 2611,
+   "online": {
+    "rate_dev": 0.0031510416666666674,
+    "max_up": 0.19352338415498993,
+    "mean_up": 0.016737027768342825,
+    "rate": 0.0999099909990999,
+    "steps": 7,
+    "step_missed": 2,
+    "episodes": 1,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.03759440104166666,
+    "max_up": 0.040283236886379414,
+    "mean_up": 0.008959902663735924,
+    "rate": 0.13141314131413143,
+    "steps": 7,
+    "step_missed": 0,
+    "episodes": 1,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4681,
+   "len": 2607,
+   "online": {
+    "rate_dev": 0.002490157480314962,
+    "max_up": 0.2567271910011846,
+    "mean_up": 0.020958735962296526,
+    "rate": 0.0966576332429991,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.005534776902887141,
+    "max_up": 0.07359177242981424,
+    "mean_up": 0.023670637862134143,
+    "rate": 0.0975609756097561,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4701,
+   "len": 2734,
+   "online": {
+    "rate_dev": 0.002748031496062993,
+    "max_up": 0.2057385975490882,
+    "mean_up": 0.015711175759746007,
+    "rate": 0.09886547811993517,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.00404461942257218,
+    "max_up": 0.0907772658373906,
+    "mean_up": 0.020416115227227194,
+    "rate": 0.0940032414910859,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4729,
+   "len": 2583,
+   "online": {
+    "rate_dev": 0.0029235537190082637,
+    "max_up": 0.19799543833919409,
+    "mean_up": 0.015344878253991,
+    "rate": 0.09787626962142197,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.011015840220385674,
+    "max_up": 0.05889345062250345,
+    "mean_up": 0.012873186328131964,
+    "rate": 0.12096029547553093,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4741,
+   "len": 2540,
+   "online": {
+    "rate_dev": 0.003053665910808769,
+    "max_up": 0.13891448497252218,
+    "mean_up": 0.012159589090659891,
+    "rate": 0.09615384615384616,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.009115646258503403,
+    "max_up": 0.051625447278106196,
+    "mean_up": 0.013592702589077344,
+    "rate": 0.10480769230769231,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4746,
+   "len": 2886,
+   "online": {
+    "rate_dev": 0.0027573062261753516,
+    "max_up": 0.2131928990408633,
+    "mean_up": 0.014319915904757622,
+    "rate": 0.10028860028860029,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.003341804320203306,
+    "max_up": 0.18810363333668484,
+    "mean_up": 0.012912388646884454,
+    "rate": 0.1038961038961039,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4834,
+   "len": 2914,
+   "online": {
+    "rate_dev": 0.0029079754601226996,
+    "max_up": 0.19643316106917535,
+    "mean_up": 0.01609606331012486,
+    "rate": 0.09971711456859972,
+    "steps": 9,
+    "step_missed": 3,
+    "episodes": 2,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.009728016359918197,
+    "max_up": 0.08553016990113504,
+    "mean_up": 0.01995289485541955,
+    "rate": 0.1173974540311174,
+    "steps": 9,
+    "step_missed": 0,
+    "episodes": 2,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4916,
+   "len": 3340,
+   "online": {
+    "rate_dev": 0.002363685200107443,
+    "max_up": 0.15839708157784288,
+    "mean_up": 0.010054170046138337,
+    "rate": 0.09945652173913043,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0047045393499865725,
+    "max_up": 0.12047202318180261,
+    "mean_up": 0.015627546040654458,
+    "rate": 0.09619565217391304,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  },
+  {
+   "track": 4955,
+   "len": 2919,
+   "online": {
+    "rate_dev": 0.0020670731707317087,
+    "max_up": 0.22052292400663015,
+    "mean_up": 0.014622416449215025,
+    "rate": 0.10077519379844961,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   },
+   "clamp": {
+    "rate_dev": 0.0037947154471544725,
+    "max_up": 0.09829093304747916,
+    "mean_up": 0.02321928518686831,
+    "rate": 0.1014799154334038,
+    "steps": 0,
+    "step_missed": 0,
+    "episodes": 0,
+    "ep_missed": 0
+   }
+  }
+ ]
+}

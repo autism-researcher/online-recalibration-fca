@@ -32,3 +32,13 @@ code/make_method_figure.py
 git_commit_and_push_trc.bat
 git_commit_push_trc.log
 commit_message_trc.txt
+git_commit_and_push_trc_2.bat
+git_commit_push_trc_2.log
+commit_message_trc_2.txt
+
+# Superseded outputs of the first (pre-causal) run; see results/final/causal and offline
+results/final/final_original.json
+results/final/numbers.json
+results/final/supplementary_checks.json
+results/final/tables_generated.tex
+results/final/figures/

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Part 4: (a) OFFICIAL results with U_t updated EVERY STEP (matching
+"""Part 4: (a) results with U_t updated every step (matching
 Algorithm 1 exactly); (b) refresh-interval sensitivity (1/5/25 steps);
 (c) rate-matched online sweep in the EVENT-POOLED convention of Table V,
 with Wilson CIs, + regenerated Clamp_RateMatched.png with error bars;

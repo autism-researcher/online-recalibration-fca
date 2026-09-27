@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Follow-up to revision_reruns.py: causal-official margin sweep + U_t alone.
+"""Follow-up to revision_reruns.py: causal margin sweep and U_t alone.
 Run:  python revision_reruns_part2.py   (about the same runtime as part 1)
 Writes revision_results_part2.json.
 """

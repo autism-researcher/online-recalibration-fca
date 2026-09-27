@@ -3,7 +3,7 @@
 streams. Run:  python revision_reruns.py
 Outputs revision_results.json + Clamp_RateMatched.png in this folder.
 
-STUDY 1  Causal-official: all methods with fully causal expanding-window U_t
+STUDY 1  Causal: all methods with fully causal expanding-window U_t
          initialization (no future samples), for Tables I/III/IV/V of the
          earlier manuscript.
 STUDY 2  Rate-matched online: online update swept over targets so its realized

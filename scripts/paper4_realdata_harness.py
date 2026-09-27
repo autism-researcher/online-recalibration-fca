@@ -36,7 +36,7 @@ def load_real_streams(dataset, path):
       - yield one array per scene ordered by time.
     """
     raise NotImplementedError(
-        "Plug in your companion R(x) pipeline here. Yield np.ndarray risk streams.")
+        "Connect the companion R(x) pipeline here; yield np.ndarray risk streams.")
 
 # ----------------------------------------------------------------------
 # Recalibrators (identical to the validated clean-test code)

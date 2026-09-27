@@ -18,6 +18,10 @@ Commands (from this folder, COMPACT = paper3_pipeline/results/per_dataset):
     python final_pipeline.py COMPACT/compact carla_weights.json offline/final_original.json --workers 2
     (then make_tables / make_figures / supplementary_checks on offline/ in the same way)
 
+`scripts/final/carla_weights.json` is the exact weights file used for these runs; its SHA-256 is the
+manifest's `weights_sha256`. The repository-root `carla_weights.json` has the same eight weights with
+feature documentation added, so its checksum differs.
+
 Each results file carries a manifest: SHA-256 of every input part (score and label exports), the
 weights file and the script; the parameter configuration; bootstrap seed 0 (2,000 draws); software
 versions. Under-protection is reported against two references: the causal trailing reference (keys `cal_trail`, `cal_full_trail`, `abl_ns_trail`, `*_trail`; primary in the paper) and the retrospective centered reference (keys `cal`, `cal_full`, `abl_ns`). `figures_manifest.json` records the CARLA collision counts read from the cs_*_b.csv logs.
