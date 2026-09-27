@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-This paper - density-at-the-boundary check (answers the reviewer's f_min > 0 concern).
+Density of the risk score at the boundary (the f_min > 0 condition of Proposition 1).
 
-Proposition 1 needs the risk density f_t at the (1-tau)-quantile bounded below. The paper
-states f >= 0.8 on all 429 segments; this script *shows* it from the released features:
+Proposition 1 needs the risk density f_t at the (1-tau)-quantile bounded below. This script
+estimates it from the released features:
 per corpus it (a) builds the pooled risk distribution and marks the (1-tau)-quantile, and
 (b) estimates, per 15000-step segment, the kernel density of R at that segment's quantile
 (half-width 0.03, the value used in the paper), then reports the minimum across segments.

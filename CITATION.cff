@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the paper and this archived repository."
-title: "Bounded Under-Protection During Online Recalibration of Forward-Collision Avoidance (code and artifacts)"
+title: "A Safety Clamp for Adaptive Forward-Collision Avoidance in Intelligent Vehicles (code and results)"
 authors:
   - family-names: "Hossain"
     given-names: "Mohammad Belayet"
@@ -8,14 +8,14 @@ authors:
     given-names: "Md Abdus Samad"
   - family-names: "Yamada"
     given-names: "Kou"
-version: "1.1.0"
-date-released: "2026-07-08"
+version: "1.2.0"
+date-released: "2026-09-27"
 license: MIT
 doi: "10.5281/zenodo.20697775"
 repository-code: "https://github.com/autism-researcher/online-recalibration-fca"
 preferred-citation:
   type: article
-  title: "Bounded Under-Protection During Online Recalibration of Forward-Collision Avoidance"
+  title: "A Safety Clamp for Adaptive Forward-Collision Avoidance in Intelligent Vehicles"
   authors:
     - family-names: "Hossain"
       given-names: "Mohammad Belayet"
@@ -23,6 +23,6 @@ preferred-citation:
       given-names: "Md Abdus Samad"
     - family-names: "Yamada"
       given-names: "Kou"
-  journal: "IEEE Transactions on Intelligent Vehicles"
+  journal: "Transportation Research Part C: Emerging Technologies"
   year: 2026
-  notes: "Under review."
+  notes: "Submitted."

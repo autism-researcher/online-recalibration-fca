@@ -3,9 +3,8 @@
 Independent surrogate-safety-measure (SSM) validation for the online-recalibration
 supervisor.
 
-WHY THIS EXISTS
-  Reviewers asked for safety evidence beyond the single composite-risk quantile used
-  in the main paper. This script evaluates the supervisor (fixed / online / clamp)
+PURPOSE
+  Safety evidence beyond the single composite-risk quantile. This script evaluates the supervisor (fixed / online / clamp)
   against a PANEL of standard, independently defined surrogate safety measures:
 
       - TTC  < 1.5 s          (imminent rear-end conflict)
@@ -20,33 +19,30 @@ WHY THIS EXISTS
   events the supervisor fails to flag) and the FALSE-ALARM rate (fraction of safe
   steps it flags), with percentile-bootstrap confidence intervals over segments.
 
-INTEGRITY (read this)
-  This script computes nothing from thin air. You MUST run it on YOUR licensed
-  HighD / NGSIM / Waymo data through the two documented hooks below. The
-  `--synthetic` mode only checks that the plumbing runs; it produces NO scientific
-  result and must never be reported. Every number you put in the paper has to come
-  from a real run on real data that you executed yourself.
+DATA
+  The script runs on the licensed HighD / NGSIM / Waymo data through the two hooks
+  below. The `--synthetic` mode only checks that the plumbing runs; its output is
+  not a result.
 
-HOW IT FITS THE PIPELINE
-  Your companion feature extractors already compute, per timestep, the quantities the
+  The companion feature extractors compute, per timestep, the quantities the
   SSMs need: raw TTC (s), spacing / distance headway dhw (m), closing speed (m/s),
   and ego longitudinal acceleration (m/s^2). Wire those into `load_kinematics_and_risk`.
   The supervisor is reproduced here exactly as in the paper (eight-feature risk R_t
   is taken as given; the online update and clamp are identical to the main harness).
 
 USAGE
-  # plumbing check only (NOT a result):
+  # plumbing check only:
   python ssm_validation.py --synthetic
   # real run:
-  python ssm_validation.py --dataset highd --path /your/highd  --out ssm_highd.csv
-  python ssm_validation.py --dataset ngsim --path /your/ngsim  --out ssm_ngsim.csv
-  python ssm_validation.py --dataset waymo --path /your/waymo  --out ssm_waymo.csv
+  python ssm_validation.py --dataset highd --path DATA/highd  --out ssm_highd.csv
+  python ssm_validation.py --dataset ngsim --path DATA/ngsim  --out ssm_ngsim.csv
+  python ssm_validation.py --dataset waymo --path DATA/waymo  --out ssm_waymo.csv
 """
 import argparse, csv, sys
 import numpy as np
 
 # ----------------------------------------------------------------------
-# Supervisor settings -- match the paper exactly. Do not retune here.
+# Supervisor settings (as in the paper; not retuned here)
 # ----------------------------------------------------------------------
 TAU    = 0.10      # operator target intervention rate
 GAMMA  = 0.05      # online step size (fixed before analysis; not tuned per corpus)
@@ -55,14 +51,14 @@ MARGIN = 0.02      # clamp margin m (the operating point reported in the paper)
 BURN   = 1500      # warm-up steps excluded from metrics
 N_BOOT = 2000      # bootstrap resamples over segments
 
-# SSM danger thresholds (standard values; cite in the paper)
+# SSM danger thresholds (standard literature values)
 TTC_THRESHOLDS  = (1.5, 1.0)            # seconds
 DRAC_THRESHOLDS = (3.4, 7.5)            # m/s^2  (comfortable / emergency braking)
 PET_THRESHOLD   = 1.5                   # seconds (event-based)
 
 
 # ======================================================================
-# 1. DATA HOOKS  --  implement these for your licensed data (TODO)
+# 1. DATA HOOKS  --  implemented against the licensed data
 # ======================================================================
 def load_kinematics_and_risk(dataset, features_path, weights_path, seg_len=15000, max_traj=None):
     """Real loader for the companion cached per-dataset feature export.

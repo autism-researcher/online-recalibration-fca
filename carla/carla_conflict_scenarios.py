@@ -1,22 +1,18 @@
 #!/usr/bin/env python3
 """
-Controlled CARLA conflict scenarios in which the SUPERVISOR is the operative safety
-layer (ego NOT on autopilot; the only emergency braking comes from the supervisor).
-See PREREGISTRATION.md.
+Controlled CARLA conflict scenarios in which the supervisor is the operative safety
+layer (the ego is not on autopilot; the only emergency braking comes from the
+supervisor). These are the scripted conflicts reported in the paper (cs_*_b.csv).
 
-Fixes in this version (after observing abnormal vehicle motion):
-  * vehicles now FOLLOW THE LANE (pure-pursuit steering) instead of driving straight
-    off curved roads;
-  * hazards spawn on the lane ahead, with a world-coordinate fallback so a car always
-    appears;
-  * the cut-in is a brief, bounded lateral maneuver (no more circling);
-  * the collision sensor counts ONLY collisions with the hazard (a vehicle or walker),
-    not walls/curbs;
-  * the spectator camera follows the ego so the scene is visible.
+Scenario handling:
+  * vehicles follow the lane (pure-pursuit steering);
+  * hazards spawn on the lane ahead, with a world-coordinate fallback;
+  * the cut-in is a brief, bounded lateral maneuver;
+  * the collision sensor counts only collisions with the hazard (a vehicle or walker),
+    not walls or curbs;
+  * the spectator camera follows the ego.
 
-INTEGRITY: produces nothing until you run it in CARLA. Report only your own numbers.
-
-USAGE (pilot first, watch the screen):
+USAGE (short pilot first):
   python carla_conflict_scenarios.py --scenario lead_brake --seeds 0-1 --episode 12 --out pilot.csv
 """
 import argparse, csv, math, sys

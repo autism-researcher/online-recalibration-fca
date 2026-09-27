@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Referee-revision analysis for items 1-5 (associate-editor objections).
+Supplementary re-analysis (items 1-5 of an earlier revision).
 
 Operates on the REAL artifacts present in the project:
   P5_real/{highd,ngsim,waymo}.npy            -> per-corpus risk streams R_t
@@ -8,13 +8,10 @@ Operates on the REAL artifacts present in the project:
   online-recalibration-fca/cs_{lead,cut,cross}_b.csv -> per-seed CARLA conflicts
   density_check_results.json                 -> per-segment density / f_min
 
-IMPORTANT HONESTY NOTE
-  The .npy are single representative risk streams (5000 steps each), NOT the full
-  429-segment licensed corpora behind the paper's headline tables. Numbers below
-  are a robustness RE-ANALYSIS on the representative streams + the released result
-  tables. They support the qualitative objections and give ready-to-run code; the
-  publication numbers must be regenerated on the full licensed data with the same
-  functions (load_real_streams in paper4_realdata_harness.py).
+SCOPE
+  The .npy files are single representative risk streams (5000 steps each), not the
+  full corpora. The values printed here are a re-analysis of those streams and of
+  the released result tables; they are not the values reported in the paper.
 
 Estimators (aci/static/batch/cusum/local_boundary/density/velocity) are copied
 verbatim from paper4_realdata_harness.py so conventions match the paper.

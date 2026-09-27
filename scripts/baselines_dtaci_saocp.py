@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """
-Modern-baseline + block-bootstrap package for the TR-C revision.
+DtACI / SAOCP-style comparators and block-bootstrap intervals (development script).
 
-Adds the comparators a TR-C/ITS reviewer will expect:
+Comparators:
   - DtACI        : fully-adaptive ACI (Gibbs & Candes 2024) -- aggregates several
                    step sizes online, so there is NO fixed gamma to tune.
   - SAOCP-style  : a strongly-adaptive aggregation (restart/covering experts),
-                   a faithful-but-simplified proxy for Bhatnagar et al. 2023.
+                   a simplified version of Bhatnagar et al. 2023.
   - U_t-alone    : the slow causal (1-tau)-quantile used directly as the boundary.
   - online ACI, clamp : as in the paper.
 
 Also computes recording-clustered / moving-block bootstrap CIs on the rate
 deviation, vs the iid percentile bootstrap, to quantify the anticonservativeness.
 
-HONESTY: runs on the representative streams P5_real/{highd,ngsim,waymo}.npy
-(~5000 steps each), NOT the full 429-segment licensed corpora. Numbers here are a
-DEMONSTRATION; regenerate on the full pipeline (paper4_realdata_harness.py) before
-putting any value in the manuscript. Every reusable estimator matches the paper.
+SCOPE: runs on the representative streams P5_real/{highd,ngsim,waymo}.npy
+(about 5000 steps each), not on the full corpora, so its output is a functional
+check only. The DtACI and SAOCP values reported in the paper are computed on all
+segments by scripts/final/final_pipeline.py.
 """
 import json, os, math
 import numpy as np

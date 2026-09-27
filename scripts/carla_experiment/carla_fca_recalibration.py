@@ -3,24 +3,24 @@
 """
 Closed-loop CARLA evaluation of online recalibration for an FCA safety supervisor.
 
-Reproduces the paper's EXACT eight-feature composite risk and the recalibration
-arms (fixed / batch / online / online+clamp), plus a fixed-TTC AEB baseline and a
-no-supervisor baseline, in a CLOSED LOOP: the supervisor actually controls the ego
-vehicle through the Traffic Manager, interventions feed back into the trajectory,
-and safety is measured from GROUND TRUTH (a CARLA collision sensor) plus physical
-near-miss exposure (time-to-collision), not from the composite-risk surrogate.
+Uses the eight-feature composite risk with the frozen weights, the recalibration
+arms (fixed / batch / online / online+clamp), a fixed-TTC AEB baseline and a
+no-supervisor baseline in closed loop: the supervisor controls the ego vehicle
+through the Traffic Manager, interventions feed back into the trajectory, and
+safety is measured with the CARLA collision sensor and time-to-collision rather
+than with the composite-risk score.
 
-A distribution shift is induced mid-episode (extra traffic + more aggressive
-Traffic Manager) so the calibration-drift problem the paper studies actually
-manifests in closed loop.
+A distribution shift is induced mid-episode (extra traffic and a more aggressive
+Traffic Manager).
 
-Tested against the CARLA 0.9.13 Python API.
+This is the earlier Traffic-Manager harness. The scripted conflicts reported in
+the paper are run by carla_conflict_scenarios.py, which imports the risk and
+supervisor functions from this file.
 
-INTEGRITY NOTE: this script only MEASURES. Every reported number comes from the
-running simulator (collision sensor, vehicle states). Nothing is hard-coded or
-fabricated. Run it, then analyse the CSV it writes.
+Tested against the CARLA 0.9.13 Python API. All outputs come from the running
+simulator and are written to a CSV.
 
-Author: M. B. Hossain (harness scaffold). See README.md for setup and usage.
+Author: M. B. Hossain. See README.md for setup and usage.
 """
 
 import argparse

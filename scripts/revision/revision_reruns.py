@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
-"""Three reviewer-requested reruns for T-IV-26-07-0524, from the cached risk
+"""Three reruns from an earlier revision, computed from the cached risk
 streams. Run:  python revision_reruns.py
 Outputs revision_results.json + Clamp_RateMatched.png in this folder.
 
 STUDY 1  Causal-official: all methods with fully causal expanding-window U_t
-         initialization (no future samples ever). These become the official
-         Tables I/III/IV/V numbers.
+         initialization (no future samples), for Tables I/III/IV/V of the
+         earlier manuscript.
 STUDY 2  Rate-matched online: online update swept over targets so its realized
          rate covers the clamp's 0.138; composite-panel missed-danger versus
          realized rate for both, plotted.
 STUDY 3  Trajectory-boundary sensitivity: (a) reset all adaptive state at every
          trajectory boundary; (b) exclude the Ns samples after each boundary
-         from all metrics. Needs per-trajectory lengths from the feature JSONs;
-         adjust iter_traj_lengths() below if your schema differs.
+         from all metrics. Needs per-trajectory lengths from the feature JSONs
+         (see iter_traj_lengths() below).
 """
 import json, math, os
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 
-# ----- paths (EDIT IF NEEDED) -----
+# ----- local paths -----
 CACHE   = r"D:\ROMBUN_HAKASE_PhD\full_risk_streams"
 FEATURES= r"D:\New Paper3\paper3_pipeline\results\per_dataset"  # {corpus}_features.json
 OUT     = os.path.dirname(os.path.abspath(__file__))

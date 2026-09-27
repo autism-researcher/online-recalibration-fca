@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """
-This paper - within-corpus (per-segment train/test) baseline for the rate-deviation comparison.
+Within-corpus (per-segment train/test) baseline for the rate-deviation comparison.
 
-WHY THIS EXISTS
-  A reviewer asked whether the fixed boundary looks bad only because it is calibrated
-  ONCE GLOBALLY and frozen. This gives the fixed boundary its fairest shot WITHOUT
-  cross-distribution transfer: for each 15000-step segment we calibrate the (1-tau)-quantile
+PURPOSE
+  Checks whether the fixed boundary does poorly only because it is calibrated once,
+  globally, and then frozen. Here it is calibrated without cross-distribution transfer: for each 15000-step segment we calibrate the (1-tau)-quantile
   on the segment's first half (train) and measure the realized-rate deviation on its second
   half (test); the online update is run over the same segment and scored on the same test half.
-  This yields one number per segment (n = 117 HighD / ~400 NGSIM / 30 Waymo), so the means
-  carry a real sample and a bootstrap CI -- unlike a per-recording split (only ~4 recordings).
+  This yields one number per segment (n = 117 HighD / 400 NGSIM / 30 Waymo), so the means
+  have a bootstrap CI over segments (a per-recording split would give about four recordings).
 
 METHODS (time-averaged |rolling_rate - tau| on each segment's TEST half)
   seg_fixed : (1-tau)-quantile of the segment's train half, frozen on its test half

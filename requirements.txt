@@ -5,7 +5,8 @@ scikit-learn==1.4.2
 statsmodels==0.14.2
 matplotlib==3.8.4
 seaborn==0.13.2
-# --- CARLA closed-loop study only (install in a SEPARATE Python 3.7/3.8 env) ---
+sortedcontainers>=2.4
+# CARLA closed-loop study (separate Python 3.7/3.8 environment):
 #   pip install carla==0.9.13
-# --- Waymo ingestion only (install in a SEPARATE conda env; heavy TF dependency) ---
+# Waymo ingestion (separate environment; TensorFlow dependency):
 #   pip install waymo-open-dataset-tf-2-12-0

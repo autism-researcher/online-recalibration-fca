@@ -1,33 +1,29 @@
 #!/usr/bin/env python3
 """
-This paper - real-data test harness for the online recalibration scaling law.
+Real-data harness for the step-size scaling analysis of the earlier study.
 
-WHAT THIS DOES
-  Tests, on YOUR licensed NGSIM / HighD / Waymo data, the two predictions of the
-  corrected derivation in the manuscript/supplement:
-      gamma*  proportional to  Delta^(2/3) * f^(-1/3)
-  where Delta = local drift velocity of the (1-tau)-boundary, f = density of the
-  risk functional at that boundary. It also confirms online ACI beats static/batch.
+Tests, on the licensed NGSIM / HighD / Waymo data, the two predictions of the
+derivation in the earlier supplement:
+    gamma*  proportional to  Delta^(2/3) * f^(-1/3)
+where Delta = local drift velocity of the (1-tau)-boundary and f = density of the
+risk score at that boundary. It also compares online ACI with static and batch
+boundaries.
 
-WHAT YOU MUST PROVIDE (two hooks, marked TODO):
-  1. load_real_streams(dataset, path) -> yields 1-D numpy arrays of risk values R_t
-     in temporal order (one array per scene/track/segment). Use the SAME R(x) you
-     used in the companion calibration/audit study (spacing, relative velocity, TTC -> normalized -> aggregated).
-  2. nothing else - the estimators and tests below are dataset-agnostic.
-
-HONESTY NOTE: run this yourself on the real data. Do not accept any numbers you
-did not produce. The synthetic mode (--synthetic) only checks the plumbing.
+Input: load_real_streams(dataset, path) yields 1-D arrays of risk values R_t in
+temporal order (one array per scene, track or segment), computed with the same
+R(x) as the companion calibration study. The estimators and tests below are
+dataset-agnostic. The --synthetic mode checks the plumbing only.
 """
 import argparse, numpy as np
 from numpy.polynomial import polynomial as P
 
-TAU = 0.10            # operator target intervention rate (match your setting)
+TAU = 0.10            # operator target intervention rate
 BURN = 2000           # warm-up steps excluded from metrics
 WIN  = 600            # window for rate estimation / local density
 np.seterr(all="ignore")
 
 # ----------------------------------------------------------------------
-# 1. DATA HOOK  --  TODO: implement for your licensed copies
+# 1. DATA HOOK  --  implemented against the licensed copies
 # ----------------------------------------------------------------------
 def load_real_streams(dataset, path):
     """Yield 1-D arrays of risk values R_t (in [0,1]) in temporal order.

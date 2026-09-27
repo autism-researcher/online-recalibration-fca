@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
 """
-FULL-HARDWARE RUN (no time limit) -- regenerate real risk streams and produce the
-paper-grade revision numbers + LaTeX table on ALL segments.
+Full run on all segments: regenerates the risk streams and writes the revision
+results and a LaTeX table body.
 
 Outputs (in OUT_DIR):
   full_results.json          all numbers (per-method, block bootstrap, bound, NGSIM panel)
-  table_modernbaselines.tex  drop-in table for the manuscript
+  table_modernbaselines.tex  LaTeX table body
 
-Edit the CONFIG paths if your folders differ. Then:  python full_hardware_run.py
+Set the CONFIG paths to the local folders, then:  python full_hardware_run.py
 """
 import os, sys, json, math, time
 import numpy as np
 from numpy.lib.stride_tricks import sliding_window_view
 
-# ----------------- CONFIG (edit if needed) -----------------
+# ----------------- CONFIG (local paths) -----------------
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEATURES_DIR = r"D:\New Paper3\paper3_pipeline\results\per_dataset"   # {corpus}_features.json
 WEIGHTS_JSON = os.path.join(REPO_ROOT, "carla_weights.json")

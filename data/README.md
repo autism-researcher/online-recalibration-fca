@@ -22,8 +22,8 @@ These folders are git-ignored so the raw data is never committed.
 
 ## Risk computation
 
-Risk values `R_t` are computed with the **frozen eight-feature pipeline of the companion work**
+Risk values `R_t` are computed with the frozen eight-feature pipeline of the companion work
 (speed, longitudinal acceleration, jerk, steering variation, lane offset, time-to-collision, time
 headway, local density; each normalized to [0,1] and combined with fixed weights). No feature or
-weight is retuned in this paper. Wire that pipeline into `load_real_streams(...)` in
-`code/online_recalibration.py`.
+weight is retuned in this paper. The scripts in `scripts/final/` read the compact per-step
+exports written by that pipeline (see `results/final/README.md`).

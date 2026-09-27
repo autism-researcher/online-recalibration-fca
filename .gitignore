@@ -1,7 +1,8 @@
-# ---- NEVER commit licensed raw data or large derived data ----
+# Licensed raw data and large derived data (not redistributed)
 data/
 **/data/
-*_features.json          # large per-step feature dumps (derived from licensed data)
+# large per-step feature exports derived from licensed data
+*_features.json
 *.csv.gz
 highd/
 ngsim/
@@ -10,14 +11,24 @@ waymo/
 *.npz
 *.npy
 
-# ---- environments / caches ----
+# Environments and caches
 .venv/
 venv*/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# ---- OS / editor ----
+# OS and editor files
 .DS_Store
 Thumbs.db
 *.swp
+
+# Local working notes and helper files (not part of the release)
+PUBLISHING_GUIDE.md
+OSF_REGISTRATION_GUIDE.md
+INDEPENDENT_SAFETY_VALIDATION.md
+PREREGISTRATION.md
+code/make_method_figure.py
+git_commit_and_push_trc.bat
+git_commit_push_trc.log
+commit_message_trc.txt

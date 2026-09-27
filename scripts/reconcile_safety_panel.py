@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
 """
-This paper - single-pass reconciliation of the TTC danger panel (Section V-F + Table VIII).
+Single-pass TTC danger panel (earlier manuscript, Section V-F and Table VIII).
 
-WHY THIS EXISTS
-  Two TTC<1.5 s counts disagreed across the manuscript:
-    - Section V-F  : 17,242 "danger steps"
-    - Table VIII   : 24,803 "events"
-  and a raw scan of the released features gives yet a third number (27,906).
-  The differences come from different filtering/segmentation scopes applied by
-  two separate scripts. This script removes the ambiguity: it computes the danger
-  COUNTS and the per-method MISSED-DANGER / FALSE-ALARM / REALIZED-RATE from ONE
-  pass over ONE explicitly-defined stream, so every number in both places is
-  mutually consistent by construction.
+Earlier drafts quoted TTC<1.5 s counts produced by two scripts with different
+filtering and segmentation scopes. This script computes the danger counts and the
+per-method missed-danger, false-alarm and realized-rate values in one pass over
+one explicitly defined stream, so the counts and rates share a single scope.
 
-SCOPE DEFINITION (state this in the paper)
+SCOPE
   For each corpus, concatenate all trajectories' per-tick risk R_t in temporal
   order, discard the first WARMUP ticks, and evaluate every method on the SAME
   remaining ticks. A tick is "danger" iff its raw TTC < threshold. Counts and
@@ -21,7 +15,7 @@ SCOPE DEFINITION (state this in the paper)
 
 INPUT  : results/per_dataset/{highd,ngsim,waymo}_features.json
          (each trajectory has "features" [T x 8] already normalized, and "ttc_raw")
-WEIGHTS: carla_weights.json  (frozen Paper-2 weights; ttc is feature index 5)
+WEIGHTS: carla_weights.json  (frozen weights of the companion study; ttc is feature index 5)
 
 USAGE  : python reconcile_safety_panel.py --root /path/to/paper3_pipeline [--corpora highd waymo ngsim]
 OUTPUT : a per-corpus + pooled table for TTC<1.5 s and TTC<1.0 s, JSON saved next to this script.

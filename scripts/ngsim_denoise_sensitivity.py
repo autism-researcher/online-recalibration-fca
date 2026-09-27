@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """
-NGSIM denoising-sensitivity study (Option A, the meaningful version).
+NGSIM denoising sensitivity.
 
-Your pipeline ALREADY denoises NGSIM (3rd-order Butterworth, 2 Hz, per
+The feature pipeline denoises NGSIM positions (3rd-order Butterworth, 2 Hz, in
 src/features/ngsim.py). This script re-extracts the NGSIM risk stream under several
-filter settings and checks that the online-vs-clamp conclusions are STABLE across
-them -- i.e. the result does not hinge on the denoising choice.
+filter settings and compares the online and clamp results across them.
 
-It reuses YOUR extractor (src.features.ngsim.extract_features); it only varies the
-low-pass cutoff by monkeypatching src.features.ngsim.butterworth_position.
+It reuses the pipeline's extractor (src.features.ngsim.extract_features) and only
+varies the low-pass cutoff by replacing src.features.ngsim.butterworth_position.
 
-Run from anywhere; edit PIPELINE_ROOT / NGSIM_CSV if your paths differ.
+Set PIPELINE_ROOT / NGSIM_CSV to the local paths.
 Output: ngsim_sensitivity.json  (online & clamp rate-dev + worst-case under-prot.
 per filter setting).
 """
@@ -92,7 +91,5 @@ def main():
         print(f"{name:22} segs={nseg}  online wu={agg['online']['worst_up']}  clamp wu={agg['clamp']['worst_up']}  ({time.time()-t0:.0f}s)")
     json.dump(res, open(OUT_JSON,"w"), indent=2)
     print("\nWROTE", OUT_JSON)
-    print("Interpretation: if clamp worst-case under-protection stays low and well")
-    print("below online across ALL settings, the conclusion is robust to denoising.")
 
 if __name__=="__main__": main()
